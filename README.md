@@ -1,7 +1,7 @@
 # Parcial
 * **Titulo:** "Celi airlines" - aplicacion de ventas y manejo de datos para una aerolinea.
 
-* **Sobre mí:** Soy Rodrigo Fernandez Barbero, tengo 21 años, estudiante de la carrera Tecnicatura superior en programacion. Llevo preogramando desde 2019 de manera casual haciendo cursos pequeños online, pero ahora decidi enfocarme en la programacion mas de lleno. El trabajo en un principio lo disfrute mucho pero a medida que pasaba el tiempo me desmotivaba por la complejidad y el tiempo que me estaba llevando. Pero al final con el trabajo casi resuelto en su mayoria me dio un alivio y felicidad de lo que habia creado. 
+* **Sobre mí:** Soy Rodrigo Fernandez Barbero, tengo 22 años, estudiante de la carrera Tecnicatura superior en programacion. Llevo preogramando desde 2019 de manera casual haciendo cursos pequeños online, pero ahora decidi enfocarme en la programacion mas de lleno. El trabajo en un principio lo disfrute mucho pero a medida que pasaba el tiempo me desmotivaba por la complejidad y el tiempo que me estaba llevando. Pero al final con el trabajo casi resuelto en su mayoria me dio un alivio y felicidad de lo que habia creado. 
 
 * **Resumen:** La aplicacion permite visualizar vuelos de la aerolinea y sus respectivos pasajeros, dar de alta clientes, asignar esos clientes a los distintos vuelos para convertirlos en pasajeros. Permite ver estadisticas historicas de la empresa y como ultimo permite realizar un sorteo para ganarse un vuelo.
 
