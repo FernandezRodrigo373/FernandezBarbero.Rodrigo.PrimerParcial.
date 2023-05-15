@@ -1,9 +1,0 @@
-C:\Users\Rodoo\OneDrive\Escritorio\Cosas\UTN 2023\Parcial labo\FernandezBarbero.Rodrigo.PrimerParcial\UI\obj\Debug\net5.0-windows\UI.csproj.AssemblyReference.cache
-C:\Users\Rodoo\OneDrive\Escritorio\Cosas\UTN 2023\Parcial labo\FernandezBarbero.Rodrigo.PrimerParcial\UI\obj\Debug\net5.0-windows\UI.AltaCliente.resources
-C:\Users\Rodoo\OneDrive\Escritorio\Cosas\UTN 2023\Parcial labo\FernandezBarbero.Rodrigo.PrimerParcial\UI\obj\Debug\net5.0-windows\UI.AltaPasajero.resources
-C:\Users\Rodoo\OneDrive\Escritorio\Cosas\UTN 2023\Parcial labo\FernandezBarbero.Rodrigo.PrimerParcial\UI\obj\Debug\net5.0-windows\UI.CrearVuelos.resources
-C:\Users\Rodoo\OneDrive\Escritorio\Cosas\UTN 2023\Parcial labo\FernandezBarbero.Rodrigo.PrimerParcial\UI\obj\Debug\net5.0-windows\UI.LoginEmpleadoVendedor.resources
-C:\Users\Rodoo\OneDrive\Escritorio\Cosas\UTN 2023\Parcial labo\FernandezBarbero.Rodrigo.PrimerParcial\UI\obj\Debug\net5.0-windows\UI.MenuAerolinea.resources
-C:\Users\Rodoo\OneDrive\Escritorio\Cosas\UTN 2023\Parcial labo\FernandezBarbero.Rodrigo.PrimerParcial\UI\obj\Debug\net5.0-windows\UI.MenuEstadisticas.resources
-C:\Users\Rodoo\OneDrive\Escritorio\Cosas\UTN 2023\Parcial labo\FernandezBarbero.Rodrigo.PrimerParcial\UI\obj\Debug\net5.0-windows\UI.SorteoCliente.resources
-C:\Users\Rodoo\OneDrive\Escritorio\Cosas\UTN 2023\Parcial labo\FernandezBarbero.Rodrigo.PrimerParcial\UI\obj\Debug\net5.0-windows\UI.csproj.GenerateResource.cache

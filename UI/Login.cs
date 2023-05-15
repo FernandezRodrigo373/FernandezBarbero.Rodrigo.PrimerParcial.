@@ -10,11 +10,12 @@ using System.Windows.Forms;
 
 namespace UI
 {
-    public partial class CrearVuelos : Form
+    public partial class Login : Form
     {
-        public CrearVuelos()
+        public Login()
         {
             InitializeComponent();
         }
+
     }
 }
