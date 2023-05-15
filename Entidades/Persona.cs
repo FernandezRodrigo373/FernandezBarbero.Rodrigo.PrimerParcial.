@@ -15,6 +15,12 @@ namespace Entidades
             this.edad = edad;
         }
 
+        protected Persona(string nombre, string apellido)
+        {
+            this.nombre = nombre;
+            this.apellido = apellido;
+        }
+
         public virtual string MostrarInfoPersona()
         {
             return $"{nombre} \n{apellido} \n{edad}\n";

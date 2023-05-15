@@ -7,12 +7,13 @@ using System.Reflection.Emit;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using System.Text.Json;
 
 namespace Entidades
 {
     public static class AerolineaSistema 
     {
-        public static List<Vendedor> listaVendedores;
+        public static List<Empleado> listaEmpleados;
         public static List<Vuelo> listaDeVuelos;
         public static List<Avion> listaDeAviones;
         public static List<Cliente> listaDeClientes;
@@ -28,15 +29,26 @@ namespace Entidades
         static string mensaje2;
         static string mensaje3;
 
+        //static string obj_json;
+        static Empleado obj_archivo;
+
         static AerolineaSistema()
         {
-            listaVendedores = new List<Vendedor>();
-            listaVendedores.Add(new Vendedor("Rodrigo", "Fernandez", 45, "rodrigo.fernandez", "123"));
-            listaVendedores.Add(new Vendedor("Camila", "Iarussi", 18, "cami.iarussi", "456"));
-            listaVendedores.Add(new Vendedor("Matias", "Carrion", 53, "matias.carrion", "789"));
-            listaVendedores.Add(new Vendedor("Lionel", "Messi", 35, "lionel.messi", "1010"));
-            listaVendedores.Add(new Vendedor("Admin", "Supremo", 35, "admin.supremo", "abc123"));
+            using (System.IO.StreamReader sr = new System.IO.StreamReader("MOCK_DATA.json"))
+            {
+                string json_str = sr.ReadToEnd();
 
+                obj_archivo = (Empleado)System.Text.Json.JsonSerializer.Deserialize(json_str, typeof (Empleado)); 
+            }
+
+            listaEmpleados = new List<Empleado>();
+            listaEmpleados.Add(obj_archivo);
+            /*listaEmpleados.Add(new Empleado("Rodrigo", "Fernandez", 45, "rodrigo.fernandez", "123"));
+            listaEmpleados.Add(new Empleado("Camila", "Iarussi", 18, "cami.iarussi", "456"));
+            listaEmpleados.Add(new Empleado("Matias", "Carrion", 53, "matias.carrion", "789"));
+            listaEmpleados.Add(new Empleado("Lionel", "Messi", 35, "lionel.messi", "1010"));
+            listaEmpleados.Add(new Empleado("Admin", "Supremo", 35, "admin.supremo", "abc123"));
+            */
             listaDeAviones = new List<Avion>();
             listaDeAviones.Add(new Avion("rojo789d", 100, 2, 2000, 0));
             listaDeAviones.Add(new Avion("azul123f", 125, 4, 3000, 0));
@@ -86,22 +98,22 @@ namespace Entidades
         /// <summary>
         /// Valida el ingreso de datos para el login de los usuarios vendedor
         /// </summary>
-        /// <param name="usuario"></param>
+        /// <param name="legajo"></param>
         /// <param name="clave"></param>
         /// <returns></returns>
         /// <exception cref="Exception"></exception>
-        public static Vendedor ValidarLoginVendedores(string usuario, string clave)
+        public static Empleado ValidarLoginVendedores(int legajo, string clave)
         {
             
-            if (!String.IsNullOrEmpty(usuario) && !String.IsNullOrEmpty(clave))
+            if (legajo < 1 || legajo < 5 && !String.IsNullOrEmpty(clave))
             {
-                foreach (Vendedor vendedorEnLista in listaVendedores)
+                foreach (Empleado empleadoEnLista in listaEmpleados)
                 {
-                    if (vendedorEnLista.Usuario == usuario)
+                    if (empleadoEnLista.legajo == legajo)
                     {
-                        if (vendedorEnLista.Clave == clave)
+                        if (empleadoEnLista.Clave == clave)
                         {
-                            return vendedorEnLista;
+                            return empleadoEnLista;
                         }
                         throw new Exception("ERROR. Clave incorrecta");
                     }
