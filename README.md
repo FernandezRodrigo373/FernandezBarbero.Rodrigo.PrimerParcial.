@@ -15,7 +15,7 @@
 *
 
     Tema 1:
-Sentencias foreach y for:
+Sentencias foreach y  for:
 Para recorrer las listas de datos y poder tomar datos de ellas.
 
      Tema 2:
