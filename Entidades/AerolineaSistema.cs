@@ -8,6 +8,8 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Text.Json;
+using Newtonsoft.Json;
+using System.IO;
 
 namespace Entidades
 {
@@ -32,17 +34,39 @@ namespace Entidades
         //static string obj_json;
         static Empleado obj_archivo;
 
+
+
         static AerolineaSistema()
         {
-            using (System.IO.StreamReader sr = new System.IO.StreamReader("MOCK_DATA.json"))
+
+            string carpetaProyecto = AppDomain.CurrentDomain.BaseDirectory;
+            string rutaArchivo = Path.Combine(carpetaProyecto, "MOCK_DATA.json");
+
+            /*using (System.IO.StreamReader sr = new System.IO.StreamReader("C:\\Users\\Rodoo\\OneDrive\\Escritorio\\Cosas\\UTN 2023\\Parcial labo\\FernandezBarbero.Rodrigo.PrimerParcial"))
             {
                 string json_str = sr.ReadToEnd();
 
-                obj_archivo = (Empleado)System.Text.Json.JsonSerializer.Deserialize(json_str, typeof (Empleado)); 
-            }
+                obj_archivo = ((Empleado)System.Text.Json.JsonSerializer.Deserialize(json_str, typeof (List< Empleado>))); 
+            }*/
+
+            //string rutaArchivo = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "MOCK_DATA.json");
+
+            // Leer el contenido del archivo JSON
+            string contenidoArchivo = File.ReadAllText(rutaArchivo);
+
+            // Deserializar el contenido en una lista de objetos Empleado
+            List<Empleado> listaEmpleados = JsonConvert.DeserializeObject<List<Empleado>>(contenidoArchivo);
+           /* string rutaArchivo = "MOCK_DATA.json";
+
+            // Leer el contenido del archivo
+            string contenidoArchivo = File.ReadAllText(rutaArchivo);
+
+            // Deserializar el contenido en una lista de objetos Casa
+            List<Empleado> listaEmpleados = JsonConvert.DeserializeObject<List<Empleado>>(contenidoArchivo);
+           */
 
             listaEmpleados = new List<Empleado>();
-            listaEmpleados.Add(obj_archivo);
+            
             /*listaEmpleados.Add(new Empleado("Rodrigo", "Fernandez", 45, "rodrigo.fernandez", "123"));
             listaEmpleados.Add(new Empleado("Camila", "Iarussi", 18, "cami.iarussi", "456"));
             listaEmpleados.Add(new Empleado("Matias", "Carrion", 53, "matias.carrion", "789"));
@@ -96,31 +120,32 @@ namespace Entidades
 
 
         /// <summary>
-        /// Valida el ingreso de datos para el login de los usuarios vendedor
+        /// Valida el ingreso de datos para el login de los empleados
         /// </summary>
-        /// <param name="legajo"></param>
+        /// <param name="correo"></param>
         /// <param name="clave"></param>
         /// <returns></returns>
         /// <exception cref="Exception"></exception>
-        public static Empleado ValidarLoginVendedores(int legajo, string clave)
+        public static Empleado ValidarLoginVendedores(string correo, string clave)
         {
             
-            if (legajo < 1 || legajo < 5 && !String.IsNullOrEmpty(clave))
-            {
+           // if (!String.IsNullOrEmpty(clave))
+           // {
                 foreach (Empleado empleadoEnLista in listaEmpleados)
                 {
-                    if (empleadoEnLista.legajo == legajo)
+                    if (empleadoEnLista.correo == correo)
                     {
                         if (empleadoEnLista.Clave == clave)
                         {
                             return empleadoEnLista;
                         }
-                        throw new Exception("ERROR. Clave incorrecta");
+                        //throw new Exception("ERROR. Clave incorrecta");
                     }
                 }
 
-            }
-            throw new Exception("ERROR. Vuelva a ingresar los datos");
+            //}
+            // throw new Exception("ERROR. Vuelva a ingresar los datos");
+            return null;
 
         }
 

@@ -17,7 +17,7 @@ namespace UI
         public MenuAerolinea(Empleado Empleado)
         {
             InitializeComponent();
-            if (Empleado.legajo == 1 && Empleado.Clave == "123abc45")
+            if (Empleado.correo == "cgorgen@vendedor.com" && Empleado.Clave == "123abc45")
             {
                 btn_RealizarSorteo.Visible = true;
 

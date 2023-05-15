@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "6gk+Ma0obi3bwsjmjYxJ72fFGIg8TnUeV2AUBz2kAuZe3iNE8imJMdIRf05YTkNNb86CsOkJFLGNHix3TrpHRw==",
+  "dgSpecHash": "TakztB3zmLOLXwv0/TPoyeNDa7Z1kLOCcGh4DHA848Gpf+i0g044Ibt4jenpRXKTd+yf0Onfak7UseqJxVVtcA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Rodoo\\OneDrive\\Escritorio\\Cosas\\UTN 2023\\Parcial labo\\FernandezBarbero.Rodrigo.PrimerParcial\\UI\\UI.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Rodoo\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

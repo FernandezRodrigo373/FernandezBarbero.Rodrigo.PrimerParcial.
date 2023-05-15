@@ -21,28 +21,6 @@ namespace UI
         }
 
 
-        private void btn_Ingresar_Click(object sender, EventArgs e)
-        {
-
-            try
-            {
-                Empleado empleadoSolicitado = AerolineaSistema.ValidarLoginVendedores(int.Parse(txt_Usuario.Text), txt_Clave.Text);
-                MenuAerolinea menuAerolinea = new MenuAerolinea(empleadoSolicitado);
-                menuAerolinea.Show();
-            }
-            catch (Exception excepcion)
-            {
-                lbl_Error.Show();
-                lbl_Error.Text = excepcion.Message;
-            }
-
-        }
-
-        private void btn_Autocompletar_Click(object sender, EventArgs e)
-        {
-            txt_Usuario.Text = "1";
-            txt_Clave.Text = "123abc45";
-        }
 
         public void LimpiarPantalla()
         {
@@ -51,10 +29,42 @@ namespace UI
 
         }
 
-        private void btn_Salir_Click(object sender, EventArgs e)
-        {
 
+
+
+
+        private void btn_Ingresar_Click_1(object sender, EventArgs e)
+        {
+            try
+            {
+                Empleado empleadoSolicitado = AerolineaSistema.ValidarLoginVendedores(txt_Usuario.Text, txt_Clave.Text);
+                MenuAerolinea menuAerolinea = new MenuAerolinea(empleadoSolicitado);
+                menuAerolinea.Show();
+            }
+            catch (Exception excepcion)
+            {
+                lbl_Error.Show();
+                lbl_Error.Text = excepcion.Message;
+            }
+        }
+
+        private void btn_Autocompletar_Click_1(object sender, EventArgs e)
+        {
+            txt_Usuario.Text = "admin@admin.com";
+            txt_Clave.Text = "12345678";
+        }
+
+        private void btn_Salir_Click_1(object sender, EventArgs e)
+        {
             this.Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            foreach (var empleado in AerolineaSistema. listaEmpleados)
+            {
+             label2.Text = empleado.ToString();
+            }
         }
     }
 }
