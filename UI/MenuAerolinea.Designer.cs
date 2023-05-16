@@ -33,6 +33,7 @@
             this.listadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.buscarClienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.darDeAltaClienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.modificarClienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.avionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.inoformeAvionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.vueloToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -71,7 +72,7 @@
             this.vueloToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1538, 50);
+            this.menuStrip1.Size = new System.Drawing.Size(1307, 50);
             this.menuStrip1.TabIndex = 10;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -82,7 +83,8 @@
             this.clientesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.listadoToolStripMenuItem,
             this.buscarClienteToolStripMenuItem,
-            this.darDeAltaClienteToolStripMenuItem});
+            this.darDeAltaClienteToolStripMenuItem,
+            this.modificarClienteToolStripMenuItem});
             this.clientesToolStripMenuItem.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.clientesToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.clientesToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Transparent;
@@ -94,22 +96,31 @@
             // 
             this.listadoToolStripMenuItem.Font = new System.Drawing.Font("Bahnschrift Light Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.listadoToolStripMenuItem.Name = "listadoToolStripMenuItem";
-            this.listadoToolStripMenuItem.Size = new System.Drawing.Size(177, 24);
+            this.listadoToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.listadoToolStripMenuItem.Text = "Listado de clientes";
+            this.listadoToolStripMenuItem.Click += new System.EventHandler(this.listadoToolStripMenuItem_Click);
             // 
             // buscarClienteToolStripMenuItem
             // 
             this.buscarClienteToolStripMenuItem.Font = new System.Drawing.Font("Bahnschrift Light Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.buscarClienteToolStripMenuItem.Name = "buscarClienteToolStripMenuItem";
-            this.buscarClienteToolStripMenuItem.Size = new System.Drawing.Size(177, 24);
+            this.buscarClienteToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.buscarClienteToolStripMenuItem.Text = "Buscar Cliente";
+            this.buscarClienteToolStripMenuItem.Click += new System.EventHandler(this.buscarClienteToolStripMenuItem_Click);
             // 
             // darDeAltaClienteToolStripMenuItem
             // 
             this.darDeAltaClienteToolStripMenuItem.Font = new System.Drawing.Font("Bahnschrift Light Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.darDeAltaClienteToolStripMenuItem.Name = "darDeAltaClienteToolStripMenuItem";
-            this.darDeAltaClienteToolStripMenuItem.Size = new System.Drawing.Size(177, 24);
+            this.darDeAltaClienteToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.darDeAltaClienteToolStripMenuItem.Text = "Dar de Alta Cliente";
+            this.darDeAltaClienteToolStripMenuItem.Click += new System.EventHandler(this.darDeAltaClienteToolStripMenuItem_Click);
+            // 
+            // modificarClienteToolStripMenuItem
+            // 
+            this.modificarClienteToolStripMenuItem.Name = "modificarClienteToolStripMenuItem";
+            this.modificarClienteToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.modificarClienteToolStripMenuItem.Text = "Modificar Cliente";
             // 
             // avionToolStripMenuItem
             // 
@@ -124,8 +135,9 @@
             // inoformeAvionToolStripMenuItem
             // 
             this.inoformeAvionToolStripMenuItem.Name = "inoformeAvionToolStripMenuItem";
-            this.inoformeAvionToolStripMenuItem.Size = new System.Drawing.Size(175, 24);
+            this.inoformeAvionToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.inoformeAvionToolStripMenuItem.Text = "Listado de Aviones";
+            this.inoformeAvionToolStripMenuItem.Click += new System.EventHandler(this.inoformeAvionToolStripMenuItem_Click);
             // 
             // vueloToolStripMenuItem
             // 
@@ -140,8 +152,9 @@
             // buscarVueloToolStripMenuItem
             // 
             this.buscarVueloToolStripMenuItem.Name = "buscarVueloToolStripMenuItem";
-            this.buscarVueloToolStripMenuItem.Size = new System.Drawing.Size(148, 24);
+            this.buscarVueloToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.buscarVueloToolStripMenuItem.Text = "Buscar Vuelo";
+            this.buscarVueloToolStripMenuItem.Click += new System.EventHandler(this.buscarVueloToolStripMenuItem_Click);
             // 
             // btn_CrearVuelos
             // 
@@ -154,6 +167,7 @@
             this.btn_CrearVuelos.TabIndex = 13;
             this.btn_CrearVuelos.Text = "CREAR VUELO";
             this.btn_CrearVuelos.UseVisualStyleBackColor = false;
+            this.btn_CrearVuelos.Click += new System.EventHandler(this.btn_CrearVuelos_Click);
             // 
             // btn_VenderVuelos
             // 
@@ -166,6 +180,7 @@
             this.btn_VenderVuelos.TabIndex = 12;
             this.btn_VenderVuelos.Text = "VENDER VUELO";
             this.btn_VenderVuelos.UseVisualStyleBackColor = false;
+            this.btn_VenderVuelos.Click += new System.EventHandler(this.btn_VenderVuelos_Click);
             // 
             // btn_ListaDeVuelos
             // 
@@ -178,6 +193,7 @@
             this.btn_ListaDeVuelos.TabIndex = 11;
             this.btn_ListaDeVuelos.Text = "VISUALIZAR VUELOS";
             this.btn_ListaDeVuelos.UseVisualStyleBackColor = false;
+            this.btn_ListaDeVuelos.Click += new System.EventHandler(this.btn_ListaDeVuelos_Click);
             // 
             // btn_BuscarVuelosPorId
             // 
@@ -190,6 +206,7 @@
             this.btn_BuscarVuelosPorId.TabIndex = 19;
             this.btn_BuscarVuelosPorId.Text = "BUSCAR VUELO POR ID ";
             this.btn_BuscarVuelosPorId.UseVisualStyleBackColor = false;
+            this.btn_BuscarVuelosPorId.Click += new System.EventHandler(this.btn_BuscarVuelosPorId_Click);
             // 
             // btn_BuscarCliente
             // 
@@ -202,6 +219,7 @@
             this.btn_BuscarCliente.TabIndex = 18;
             this.btn_BuscarCliente.Text = "BUSCAR CLIENTE";
             this.btn_BuscarCliente.UseVisualStyleBackColor = false;
+            this.btn_BuscarCliente.Click += new System.EventHandler(this.btn_BuscarCliente_Click);
             // 
             // dtg_Datos
             // 
@@ -242,6 +260,7 @@
             this.btn_RealizarSorteo.TabIndex = 24;
             this.btn_RealizarSorteo.Text = "Realizar Sorteo";
             this.btn_RealizarSorteo.UseVisualStyleBackColor = false;
+            this.btn_RealizarSorteo.Click += new System.EventHandler(this.btn_RealizarSorteo_Click);
             // 
             // btn_ConsultarEstadisticas
             // 
@@ -254,6 +273,7 @@
             this.btn_ConsultarEstadisticas.TabIndex = 23;
             this.btn_ConsultarEstadisticas.Text = "Consultar Estadisticas";
             this.btn_ConsultarEstadisticas.UseVisualStyleBackColor = false;
+            this.btn_ConsultarEstadisticas.Click += new System.EventHandler(this.btn_ConsultarEstadisticas_Click);
             // 
             // lbl_OperadorTexto
             // 
@@ -314,6 +334,7 @@
             this.btn_Ayuda.TabIndex = 29;
             this.btn_Ayuda.Text = "Ayuda";
             this.btn_Ayuda.UseVisualStyleBackColor = true;
+            this.btn_Ayuda.Click += new System.EventHandler(this.btn_Ayuda_Click);
             // 
             // dtg_Dato2
             // 
@@ -337,12 +358,14 @@
             this.btn_Salir.TabIndex = 31;
             this.btn_Salir.Text = "SALIR";
             this.btn_Salir.UseVisualStyleBackColor = false;
+            this.btn_Salir.Click += new System.EventHandler(this.btn_Salir_Click);
             // 
             // MenuAerolinea
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1538, 524);
+            this.BackColor = System.Drawing.Color.Gray;
+            this.ClientSize = new System.Drawing.Size(1307, 524);
             this.Controls.Add(this.btn_Salir);
             this.Controls.Add(this.gb_MuestraDatos);
             this.Controls.Add(this.btn_Ayuda);
@@ -403,5 +426,6 @@
         private System.Windows.Forms.Button btn_Ayuda;
         private System.Windows.Forms.DataGridView dtg_Dato2;
         private System.Windows.Forms.Button btn_Salir;
+        private System.Windows.Forms.ToolStripMenuItem modificarClienteToolStripMenuItem;
     }
 }

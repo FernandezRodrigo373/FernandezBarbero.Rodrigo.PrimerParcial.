@@ -29,31 +29,19 @@ namespace UI
         }
 
 
-        private void CrearVuelos_Load(object sender, EventArgs e)
+
+
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
-            lbl_Error.Visible = false;
-            cmb_Origen.Items.AddRange(Enum.GetNames(typeof(eOrigen)));
-            cmb_Destino.Items.AddRange(Enum.GetNames(typeof(eDestinos)));
-
-            cmb_Destino.SelectedIndex = 0;
-            cmb_Origen.SelectedIndex = 0;
-
-            AerolineaSistema.listaDeAviones = AerolineaSistema.CargarAviones();
-
-            foreach (Avion item in AerolineaSistema.listaDeAviones)
+            if (cmb_Origen.Focused && cmb_Origen.SelectedIndex > 15)
             {
-                cmb_Avion.Items.Add(item);
-                cmb_Avion.SelectedIndex = 0;
+                cmb_Destino.SelectedIndex = 0;
+                cmb_Destino.Enabled = false;
             }
-
-            dtp_Fecha.MinDate = DateTime.Today;
-
-            gb_Ayuda.Visible = false;
-
         }
 
-
-        private void button1_Click(object sender, EventArgs e)
+        private void btn_Agregar_Click(object sender, EventArgs e)
         {
             List<Pasajero> lista = new List<Pasajero>();
             eDestinos auxDestino = (eDestinos)cmb_Destino.SelectedIndex;
@@ -83,24 +71,6 @@ namespace UI
                 lbl_Error.Visible = true;
                 lbl_Error.Text = "ERROR, Ingrese nombre del piloto para continuar";
             }
-
-        }
-
-        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (cmb_Origen.Focused && cmb_Origen.SelectedIndex > 15)
-            {
-                cmb_Destino.SelectedIndex = 0;
-                cmb_Destino.Enabled = false;
-            }
-        }
-
-
-
-        private void btn_Salir_Click(object sender, EventArgs e)
-        {
-            this.DialogResult = DialogResult.OK;
-            this.Close();
         }
 
         private void btn_Ayuda_Click(object sender, EventArgs e)
@@ -122,6 +92,34 @@ namespace UI
             gb_Ayuda.Visible = true;
 
             lbl_Ayuda.Text = sb.ToString();
+        }
+
+        private void btn_Salir_Click(object sender, EventArgs e)
+        {
+            this.DialogResult = DialogResult.OK;
+            this.Close();
+        }
+
+        private void CrearVuelos_Load_1(object sender, EventArgs e)
+        {
+            lbl_Error.Visible = false;
+            cmb_Origen.Items.AddRange(Enum.GetNames(typeof(eOrigen)));
+            cmb_Destino.Items.AddRange(Enum.GetNames(typeof(eDestinos)));
+
+            cmb_Destino.SelectedIndex = 0;
+            cmb_Origen.SelectedIndex = 0;
+
+            AerolineaSistema.listaDeAviones = AerolineaSistema.CargarAviones();
+
+            foreach (Avion item in AerolineaSistema.listaDeAviones)
+            {
+                cmb_Avion.Items.Add(item);
+                cmb_Avion.SelectedIndex = 0;
+            }
+
+            dtp_Fecha.MinDate = DateTime.Today;
+
+            gb_Ayuda.Visible = false;
         }
     }
 }

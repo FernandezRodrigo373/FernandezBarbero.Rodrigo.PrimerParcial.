@@ -46,35 +46,7 @@ namespace UI
             this.indexCliente = dtg_DatosAMostrar2.CurrentRow.Index;
         }
 
-        private void AltaPasajero_Load(object sender, EventArgs e)
-        {
 
-
-            dtg_DatosAMostrar.AutoResizeColumns();
-            dtg_DatosAMostrar.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
-            List<Vuelo> lista;
-            lista = AerolineaSistema.CargarVuelos();
-
-            dtg_DatosAMostrar.DataSource = null;
-            dtg_DatosAMostrar.DataSource = lista;
-
-            List<Cliente> listaClientes;
-            listaClientes = AerolineaSistema.CargarClientes();
-
-            dtg_DatosAMostrar2.AutoResizeColumns();
-            dtg_DatosAMostrar2.AutoResizeRows();
-
-            dtg_DatosAMostrar2.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
-
-            dtg_DatosAMostrar2.DataSource = null;
-            dtg_DatosAMostrar2.DataSource = listaClientes;
-
-            btn_FinalizarOperacion.Visible = false;
-
-            rb_LlevaBolsoDeMano.Checked = true;
-
-            rb_CantPasajes1.Checked = true;
-        }
 
         /// <summary>
         /// Verifica si esta agregado la seccion wifi y eleva el precio
@@ -163,6 +135,73 @@ namespace UI
             return equipaje;
         }
 
+
+
+        /// <summary>
+        /// Verifica la clase elegida y cambia el precio
+        /// </summary>
+        /// <returns></returns>
+        private eClase VerificarClase()
+        {
+            eClase clase = 0;
+
+            if (rb_ClasePremium.Checked == true)
+            {
+                clase = eClase.premium;
+                // rb_ClaseTurista.Checked = false;
+            }
+            else if (rb_ClaseTurista.Checked == true)
+            {
+                //rb_ClasePremium.Checked = false;
+
+
+
+                clase = eClase.turista;
+            }
+            return clase;
+        }
+
+
+        private void rb_ClaseTurista_CheckedChanged(object sender, EventArgs e)
+        {
+            txb_PesoValija2.Enabled = false;
+        }
+
+        private void rb_ClasePremium_CheckedChanged(object sender, EventArgs e)
+        {
+            txb_PesoValija2.Enabled = true;
+        }
+
+/// //////////////////////
+
+        private void AltaPasajero_Load(object sender, EventArgs e)
+        {
+            dtg_DatosAMostrar.AutoResizeColumns();
+            dtg_DatosAMostrar.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+            List<Vuelo> lista;
+            lista = AerolineaSistema.CargarVuelos();
+
+            dtg_DatosAMostrar.DataSource = null;
+            dtg_DatosAMostrar.DataSource = lista;
+
+            List<Cliente> listaClientes;
+            listaClientes = AerolineaSistema.CargarClientes();
+
+            dtg_DatosAMostrar2.AutoResizeColumns();
+            dtg_DatosAMostrar2.AutoResizeRows();
+
+            dtg_DatosAMostrar2.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+
+            dtg_DatosAMostrar2.DataSource = null;
+            dtg_DatosAMostrar2.DataSource = listaClientes;
+
+            btn_FinalizarOperacion.Visible = false;
+
+            rb_LlevaBolsoDeMano.Checked = true;
+
+            rb_CantPasajes1.Checked = true;
+        }
+
         private void btn_CalcularPrecio_Click(object sender, EventArgs e)
         {
             int duracion;
@@ -225,30 +264,6 @@ namespace UI
             lbl_PrecioNeto.Text = precioNeto.ToString();
 
             btn_FinalizarOperacion.Visible = true;
-        }
-
-        /// <summary>
-        /// Verifica la clase elegida y cambia el precio
-        /// </summary>
-        /// <returns></returns>
-        private eClase VerificarClase()
-        {
-            eClase clase = 0;
-
-            if (rb_ClasePremium.Checked == true)
-            {
-                clase = eClase.premium;
-                // rb_ClaseTurista.Checked = false;
-            }
-            else if (rb_ClaseTurista.Checked == true)
-            {
-                //rb_ClasePremium.Checked = false;
-
-
-
-                clase = eClase.turista;
-            }
-            return clase;
         }
 
         private void btn_FinalizarOperacion_Click(object sender, EventArgs e)
@@ -342,7 +357,6 @@ namespace UI
                 lbl_Error.Text = null;
                 lbl_Error.Text = "El pasajero ya existe en este vuelo";
             }
-
         }
 
         private void btn_BuscarCliente_Click(object sender, EventArgs e)
@@ -361,8 +375,6 @@ namespace UI
             {
                 lbl_ConfirmacionPasajero.Text = "Ingrese datos nuevamente";
             }
-
-
         }
 
         private void btn_BuscarVuelo_Click(object sender, EventArgs e)
@@ -382,8 +394,6 @@ namespace UI
             {
                 lbl_ConfirmacionPasajero.Text = "Ingrese datos nuevamente";
             }
-
-
         }
 
         private void btn_Salir_Click(object sender, EventArgs e)
@@ -412,16 +422,6 @@ namespace UI
             gb_Ayuda.Visible = true;
 
             lbl_Ayuda.Text = sb.ToString();
-        }
-
-        private void rb_ClaseTurista_CheckedChanged(object sender, EventArgs e)
-        {
-            txb_PesoValija2.Enabled = false;
-        }
-
-        private void rb_ClasePremium_CheckedChanged(object sender, EventArgs e)
-        {
-            txb_PesoValija2.Enabled = true;
         }
     }
 }

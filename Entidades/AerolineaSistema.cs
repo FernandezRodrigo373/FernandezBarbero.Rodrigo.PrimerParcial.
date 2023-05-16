@@ -8,8 +8,9 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Text.Json;
-using Newtonsoft.Json;
+//using Newtonsoft.Json;
 using System.IO;
+using Newtonsoft.Json;
 
 namespace Entidades
 {
@@ -31,41 +32,18 @@ namespace Entidades
         static string mensaje2;
         static string mensaje3;
 
-        //static string obj_json;
-        static Empleado obj_archivo;
 
 
 
         static AerolineaSistema()
         {
+            string jsonString = "MOCK_DATA.json";
 
-            string carpetaProyecto = AppDomain.CurrentDomain.BaseDirectory;
-            string rutaArchivo = Path.Combine(carpetaProyecto, "MOCK_DATA.json");
+            string aux = File.ReadAllText(jsonString);
 
-            /*using (System.IO.StreamReader sr = new System.IO.StreamReader("C:\\Users\\Rodoo\\OneDrive\\Escritorio\\Cosas\\UTN 2023\\Parcial labo\\FernandezBarbero.Rodrigo.PrimerParcial"))
-            {
-                string json_str = sr.ReadToEnd();
+            listaEmpleados = JsonConvert.DeserializeObject<List<Empleado>>(aux); 
 
-                obj_archivo = ((Empleado)System.Text.Json.JsonSerializer.Deserialize(json_str, typeof (List< Empleado>))); 
-            }*/
-
-            //string rutaArchivo = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "MOCK_DATA.json");
-
-            // Leer el contenido del archivo JSON
-            string contenidoArchivo = File.ReadAllText(rutaArchivo);
-
-            // Deserializar el contenido en una lista de objetos Empleado
-            List<Empleado> listaEmpleados = JsonConvert.DeserializeObject<List<Empleado>>(contenidoArchivo);
-           /* string rutaArchivo = "MOCK_DATA.json";
-
-            // Leer el contenido del archivo
-            string contenidoArchivo = File.ReadAllText(rutaArchivo);
-
-            // Deserializar el contenido en una lista de objetos Casa
-            List<Empleado> listaEmpleados = JsonConvert.DeserializeObject<List<Empleado>>(contenidoArchivo);
-           */
-
-            listaEmpleados = new List<Empleado>();
+          
             
             /*listaEmpleados.Add(new Empleado("Rodrigo", "Fernandez", 45, "rodrigo.fernandez", "123"));
             listaEmpleados.Add(new Empleado("Camila", "Iarussi", 18, "cami.iarussi", "456"));
@@ -89,7 +67,7 @@ namespace Entidades
             listaDeClientes.Add(new Cliente("Gael", "Roldan", 20, 43546852, 1));
             listaDeClientes.Add(new Cliente("Roman", "Iarussi", 78, 8145125, 0));
             listaDeClientes.Add(new Cliente("Cristiano", "Ronaldo", 38, 32152456, 6));
-            listaDeClientes.Add(new Cliente("Agustina", "Kechi", 50, 20587456, 0));
+            listaDeClientes.Add(new Cliente("Tobiaas", "Iaru", 50, 20587456, 0));
             listaDeClientes.Add(new Cliente("Carolina", "Vodanovich", 43, 23458751, 7));
             listaDeClientes.Add(new Cliente("Pepe", "Veraz", 47, 24123456, 3));
             listaDeClientes.Add(new Cliente("Luka", "Doncic", 14, 48542654, 2));

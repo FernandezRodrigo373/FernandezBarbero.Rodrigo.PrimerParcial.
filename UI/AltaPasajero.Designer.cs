@@ -105,6 +105,7 @@
             this.btn_BuscarVuelo.TabIndex = 6;
             this.btn_BuscarVuelo.Text = "Buscar Vuelo";
             this.btn_BuscarVuelo.UseVisualStyleBackColor = false;
+            this.btn_BuscarVuelo.Click += new System.EventHandler(this.btn_BuscarVuelo_Click);
             // 
             // btn_BuscarCliente
             // 
@@ -117,6 +118,7 @@
             this.btn_BuscarCliente.TabIndex = 5;
             this.btn_BuscarCliente.Text = "Buscar Cliente";
             this.btn_BuscarCliente.UseVisualStyleBackColor = false;
+            this.btn_BuscarCliente.Click += new System.EventHandler(this.btn_BuscarCliente_Click);
             // 
             // txb_IdVuelo
             // 
@@ -177,6 +179,7 @@
             this.btn_CalcularPrecio.TabIndex = 21;
             this.btn_CalcularPrecio.Text = "Calcular precio";
             this.btn_CalcularPrecio.UseVisualStyleBackColor = false;
+            this.btn_CalcularPrecio.Click += new System.EventHandler(this.btn_CalcularPrecio_Click);
             // 
             // dtg_DatosAMostrar2
             // 
@@ -197,6 +200,7 @@
             this.btn_Ayuda.TabIndex = 24;
             this.btn_Ayuda.Text = "Ayuda";
             this.btn_Ayuda.UseVisualStyleBackColor = true;
+            this.btn_Ayuda.Click += new System.EventHandler(this.btn_Ayuda_Click);
             // 
             // btn_FinalizarOperacion
             // 
@@ -209,6 +213,7 @@
             this.btn_FinalizarOperacion.TabIndex = 23;
             this.btn_FinalizarOperacion.Text = "Finalizar Operacion";
             this.btn_FinalizarOperacion.UseVisualStyleBackColor = false;
+            this.btn_FinalizarOperacion.Click += new System.EventHandler(this.btn_FinalizarOperacion_Click);
             // 
             // gb_Ayuda
             // 
@@ -484,6 +489,7 @@
             this.btn_Salir.TabIndex = 32;
             this.btn_Salir.Text = "SALIR";
             this.btn_Salir.UseVisualStyleBackColor = false;
+            this.btn_Salir.Click += new System.EventHandler(this.btn_Salir_Click);
             // 
             // groupBox2
             // 
@@ -554,6 +560,7 @@
             this.Controls.Add(this.dtg_DatosAMostrar);
             this.Name = "AltaPasajero";
             this.Text = "AltaPasajero";
+            this.Load += new System.EventHandler(this.AltaPasajero_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtg_DatosAMostrar)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

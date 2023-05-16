@@ -26,7 +26,6 @@ namespace UI
 
         private void btn_Agregar_Click(object sender, EventArgs e)
         {
-
             if (txb_Dni is not null && Validadora.ValidarNumeroConRango(txb_Dni.Text, 10000000, 50000000) && Validadora.ValidarLetras(txb_Apellido.Text) && txb_Edad is not null && Validadora.ValidarNumeroConRango(txb_Edad.Text, 1, 101) && Validadora.ValidarLetras(txb_Nombre.Text))
             {
                 Cliente clienteNuevo = new Cliente(txb_Nombre.Text, txb_Apellido.Text, int.Parse(txb_Edad.Text), int.Parse(txb_Dni.Text), 0);
@@ -53,10 +52,9 @@ namespace UI
                 lbl_Error.Text = null;
                 lbl_Error.Text = "Error";
             }
-
         }
 
-        private void btn_Ayuda_Click(object sender, EventArgs e)
+        private void btn_Ayuda_Click_1(object sender, EventArgs e)
         {
             gb_Datos.Visible = true;
             lbl_Ayuda.Text = null;
@@ -75,7 +73,6 @@ namespace UI
 
             lbl_Ayuda.Text = sb.ToString();
         }
-
 
         private void btn_Salir_Click(object sender, EventArgs e)
         {

@@ -59,12 +59,6 @@ namespace UI
             this.Close();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            foreach (var empleado in AerolineaSistema. listaEmpleados)
-            {
-             label2.Text = empleado.ToString();
-            }
-        }
+
     }
 }

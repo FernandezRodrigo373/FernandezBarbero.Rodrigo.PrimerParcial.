@@ -37,8 +37,6 @@
             this.btn_Ingresar = new System.Windows.Forms.Button();
             this.btn_Salir = new System.Windows.Forms.Button();
             this.lbl_Error = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -123,7 +121,7 @@
             this.btn_Salir.BackColor = System.Drawing.Color.RoyalBlue;
             this.btn_Salir.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_Salir.ForeColor = System.Drawing.Color.White;
-            this.btn_Salir.Location = new System.Drawing.Point(215, 307);
+            this.btn_Salir.Location = new System.Drawing.Point(224, 350);
             this.btn_Salir.Name = "btn_Salir";
             this.btn_Salir.Size = new System.Drawing.Size(75, 32);
             this.btn_Salir.TabIndex = 18;
@@ -141,32 +139,11 @@
             this.lbl_Error.TabIndex = 17;
             this.lbl_Error.Text = "l";
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(36, 66);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 19;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(305, 74);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(38, 15);
-            this.label2.TabIndex = 20;
-            this.label2.Text = "label2";
-            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(685, 395);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(311, 395);
             this.Controls.Add(this.btn_Salir);
             this.Controls.Add(this.lbl_Error);
             this.Controls.Add(this.btn_Autocompletar);
@@ -194,7 +171,5 @@
         private System.Windows.Forms.Button btn_Salir;
         private System.Windows.Forms.Label lbl_Error;
         private System.Windows.Forms.TextBox txt_Usuario;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label2;
     }
 }

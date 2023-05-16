@@ -14,21 +14,38 @@ namespace UI
     public partial class MenuAerolinea : Form
     {
         List<Vuelo> listaFiltrada;
-        public MenuAerolinea(Empleado Empleado)
+        public MenuAerolinea(Empleado empleado)
         {
             InitializeComponent();
-            if (Empleado.correo == "cgorgen@vendedor.com" && Empleado.Clave == "123abc45")
+
+
+            if (empleado.correo == "admin@admin.com" && empleado.Clave == "12345678")
             {
                 btn_RealizarSorteo.Visible = true;
-
+                btn_ListaDeVuelos.Visible = false;
+                btn_VenderVuelos.Visible = false;
+                clientesToolStripMenuItem.Enabled = false;
             }
             else
             {
                 btn_RealizarSorteo.Visible = false;
             }
 
+            if(empleado.legajo < 0 && empleado.legajo > 3)
+            {
+                btn_CrearVuelos.Visible = false;
+            }
 
-            lbl_Operador.Text = Empleado.Nombre + ' ' + Empleado.Apellido;
+            if (empleado.legajo == 4)
+            {
+                btn_ListaDeVuelos.Visible = false;
+                btn_VenderVuelos.Visible = false;
+                btn_CrearVuelos.Visible = false;
+
+            }
+
+
+            lbl_Operador.Text = empleado.Nombre + ' ' + empleado.Apellido;
 
 
             txb_VueloABuscar.Visible = false;
@@ -64,7 +81,65 @@ namespace UI
             lbl_Fecha.Text = DateTime.Now.ToLongDateString();
         }
 
-        private void btn_ListaDeVuelos_Click_1(object sender, EventArgs e)
+
+
+
+
+        private void dataGridView1_DataSourceChanged(object sender, EventArgs e)
+        {
+            Refresh();
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+        private void verListaDePasajerosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            txb_ClienteABuscar.Visible = true;
+            string datoABuscar = txb_ClienteABuscar.Text;
+
+            if (Validadora.ValidarLetras(datoABuscar))
+            {
+                List<Cliente> listaFiltrada = AerolineaSistema.BuscarClientePorNombre(datoABuscar);
+                dtg_Datos.DataSource = listaFiltrada;
+                dtg_Datos.AutoResizeColumns();
+                dtg_Datos.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+                dtg_Datos.Visible = true;
+            }
+            else
+            {
+                lbl_Ayuda.Text = null;
+                lbl_Ayuda.Text = "Error";
+            }
+        }
+
+
+
+
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+        }
+
+
+
+
+
+
+
+
+
+
+        private void btn_ListaDeVuelos_Click(object sender, EventArgs e)
         {
 
             dtg_Datos.AutoResizeColumns();
@@ -79,7 +154,6 @@ namespace UI
             dtg_Datos.DataSource = lista;
         }
 
-
         private void btn_CrearVuelos_Click(object sender, EventArgs e)
         {
             CrearVuelos menuCreacionVuelos = new CrearVuelos();
@@ -89,14 +163,7 @@ namespace UI
                 dtg_Datos.Refresh();
             }
 
-
         }
-
-        private void dataGridView1_DataSourceChanged(object sender, EventArgs e)
-        {
-            Refresh();
-        }
-
 
         private void listadoToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -113,15 +180,12 @@ namespace UI
             dtg_Datos.DataSource = lista;
         }
 
-
-
         private void buscarClienteToolStripMenuItem_Click(object sender, EventArgs e)
         {
             dtg_Datos.Visible = true;
             txb_ClienteABuscar.Visible = true;
             btn_BuscarCliente.Visible = true;
         }
-
 
         private void darDeAltaClienteToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -158,37 +222,10 @@ namespace UI
             dtg_Datos.DataSource = lista;
         }
 
-
-        private void verListaDePasajerosToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            txb_ClienteABuscar.Visible = true;
-            string datoABuscar = txb_ClienteABuscar.Text;
-
-            if (Validadora.ValidarLetras(datoABuscar))
-            {
-                List<Cliente> listaFiltrada = AerolineaSistema.BuscarClientePorNombre(datoABuscar);
-                dtg_Datos.DataSource = listaFiltrada;
-                dtg_Datos.AutoResizeColumns();
-                dtg_Datos.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
-                dtg_Datos.Visible = true;
-            }
-            else
-            {
-                lbl_Ayuda.Text = null;
-                lbl_Ayuda.Text = "Error";
-            }
-        }
-
         private void buscarVueloToolStripMenuItem_Click(object sender, EventArgs e)
         {
             txb_VueloABuscar.Visible = true;
             btn_BuscarVuelosPorId.Visible = true;
-        }
-
-
-
-        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
         }
 
         private void btn_BuscarCliente_Click(object sender, EventArgs e)
@@ -206,6 +243,16 @@ namespace UI
             dtg_Datos.DataSource = listaFiltrada;
         }
 
+        private void btn_ConsultarEstadisticas_Click(object sender, EventArgs e)
+        {
+            MenuEstadisticas menuEstadistica = new MenuEstadisticas();
+
+            if (menuEstadistica.ShowDialog() == DialogResult.OK)
+            {
+                dtg_Datos.Refresh();
+            }
+        }
+
         private void btn_BuscarVuelosPorId_Click(object sender, EventArgs e)
         {
             txb_VueloABuscar.Visible = true;
@@ -220,16 +267,6 @@ namespace UI
             dtg_Dato2.DataSource = listaFiltrada[0].ListaPasajeros;
         }
 
-        private void btn_ConsultarEstadisticas_Click(object sender, EventArgs e)
-        {
-            MenuEstadisticas menuEstadistica = new MenuEstadisticas();
-
-            if (menuEstadistica.ShowDialog() == DialogResult.OK)
-            {
-                dtg_Datos.Refresh();
-            }
-        }
-
         private void btn_Salir_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -239,7 +276,6 @@ namespace UI
         {
             SorteoCliente menuSorteo = new SorteoCliente();
             menuSorteo.Show();
-
         }
 
         private void btn_Ayuda_Click(object sender, EventArgs e)
@@ -260,10 +296,6 @@ namespace UI
             gb_MuestraDatos.Visible = true;
 
             lbl_Ayuda.Text = sb.ToString();
-
-
         }
-
-
     }
 }

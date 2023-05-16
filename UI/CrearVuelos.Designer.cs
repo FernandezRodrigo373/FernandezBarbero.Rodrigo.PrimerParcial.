@@ -134,6 +134,7 @@
             this.btn_Salir.TabIndex = 20;
             this.btn_Salir.Text = "SALIR";
             this.btn_Salir.UseVisualStyleBackColor = false;
+            this.btn_Salir.Click += new System.EventHandler(this.btn_Salir_Click);
             // 
             // btn_Agregar
             // 
@@ -146,6 +147,7 @@
             this.btn_Agregar.TabIndex = 19;
             this.btn_Agregar.Text = "Agregar";
             this.btn_Agregar.UseVisualStyleBackColor = false;
+            this.btn_Agregar.Click += new System.EventHandler(this.btn_Agregar_Click);
             // 
             // btn_Ayuda
             // 
@@ -155,6 +157,7 @@
             this.btn_Ayuda.TabIndex = 22;
             this.btn_Ayuda.Text = "Ayuda";
             this.btn_Ayuda.UseVisualStyleBackColor = true;
+            this.btn_Ayuda.Click += new System.EventHandler(this.btn_Ayuda_Click);
             // 
             // gb_Ayuda
             // 
@@ -207,6 +210,7 @@
             this.Controls.Add(this.cmb_Destino);
             this.Name = "CrearVuelos";
             this.Text = "CrearVuelos";
+            this.Load += new System.EventHandler(this.CrearVuelos_Load_1);
             this.gb_Ayuda.ResumeLayout(false);
             this.gb_Ayuda.PerformLayout();
             this.ResumeLayout(false);

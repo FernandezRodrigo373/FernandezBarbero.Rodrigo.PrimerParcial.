@@ -47,7 +47,13 @@ namespace UI
             this.indexVuelo = dtg_Datos.CurrentRow.Index;
         }
 
-        private void btn_RealizarSorteo_Click(object sender, EventArgs e)
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            dtg_ClientesGanadores.DataSource = AerolineaSistema.clientesYaGanadores.ToList();
+        }
+
+        private void btn_RealizarSorteo_Click_1(object sender, EventArgs e)
         {
             int contador = 0;
             listaDeVuelos = AerolineaSistema.CargarVuelos();
@@ -84,10 +90,7 @@ namespace UI
             {
                 btn_RealizarSorteo.Enabled = false;
             }
-
         }
-
-
 
         private void btn_AgregarPasajero_Click(object sender, EventArgs e)
         {
@@ -130,7 +133,6 @@ namespace UI
 
 
             }
-
         }
 
         private void btn_Salir_Click(object sender, EventArgs e)
@@ -152,11 +154,6 @@ namespace UI
             gb_Ayuda.Visible = true;
 
             lbl_Ayuda.Text = sb.ToString();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            dtg_ClientesGanadores.DataSource = AerolineaSistema.clientesYaGanadores.ToList();
         }
     }
 }

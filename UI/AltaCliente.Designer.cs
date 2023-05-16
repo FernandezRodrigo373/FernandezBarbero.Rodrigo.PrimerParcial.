@@ -67,7 +67,7 @@
             // 
             // txb_Edad
             // 
-            this.txb_Edad.Location = new System.Drawing.Point(39, 140);
+            this.txb_Edad.Location = new System.Drawing.Point(42, 141);
             this.txb_Edad.Name = "txb_Edad";
             this.txb_Edad.PlaceholderText = "Edad";
             this.txb_Edad.Size = new System.Drawing.Size(228, 23);
@@ -84,6 +84,7 @@
             this.btn_Agregar.TabIndex = 7;
             this.btn_Agregar.Text = "Agregar";
             this.btn_Agregar.UseVisualStyleBackColor = false;
+            this.btn_Agregar.Click += new System.EventHandler(this.btn_Agregar_Click);
             // 
             // gb_Datos
             // 
@@ -111,6 +112,7 @@
             this.btn_Ayuda.TabIndex = 10;
             this.btn_Ayuda.Text = "Ayuda";
             this.btn_Ayuda.UseVisualStyleBackColor = true;
+            this.btn_Ayuda.Click += new System.EventHandler(this.btn_Ayuda_Click_1);
             // 
             // btn_Salir
             // 
@@ -123,6 +125,7 @@
             this.btn_Salir.TabIndex = 11;
             this.btn_Salir.Text = "SALIR";
             this.btn_Salir.UseVisualStyleBackColor = false;
+            this.btn_Salir.Click += new System.EventHandler(this.btn_Salir_Click);
             // 
             // lbl_Error
             // 

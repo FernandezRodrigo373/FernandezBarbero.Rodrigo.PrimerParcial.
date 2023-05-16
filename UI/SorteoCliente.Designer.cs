@@ -66,6 +66,7 @@
             this.btn_AgregarPasajero.TabIndex = 16;
             this.btn_AgregarPasajero.Text = "Agregar pasajero";
             this.btn_AgregarPasajero.UseVisualStyleBackColor = false;
+            this.btn_AgregarPasajero.Click += new System.EventHandler(this.btn_AgregarPasajero_Click);
             // 
             // dtg_Datos
             // 
@@ -88,6 +89,7 @@
             this.btn_RealizarSorteo.TabIndex = 14;
             this.btn_RealizarSorteo.Text = "Realizar sorteo";
             this.btn_RealizarSorteo.UseVisualStyleBackColor = false;
+            this.btn_RealizarSorteo.Click += new System.EventHandler(this.btn_RealizarSorteo_Click_1);
             // 
             // label1
             // 
@@ -149,6 +151,7 @@
             this.btn_Ayuda.TabIndex = 22;
             this.btn_Ayuda.Text = "Ayuda";
             this.btn_Ayuda.UseVisualStyleBackColor = true;
+            this.btn_Ayuda.Click += new System.EventHandler(this.btn_Ayuda_Click);
             // 
             // btn_Salir
             // 
@@ -160,6 +163,7 @@
             this.btn_Salir.TabIndex = 21;
             this.btn_Salir.Text = "SALIR";
             this.btn_Salir.UseVisualStyleBackColor = false;
+            this.btn_Salir.Click += new System.EventHandler(this.btn_Salir_Click);
             // 
             // lbl_Mensaje
             // 
