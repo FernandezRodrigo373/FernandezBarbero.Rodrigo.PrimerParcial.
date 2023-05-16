@@ -78,7 +78,7 @@
             this.btn_Agregar.BackColor = System.Drawing.Color.RoyalBlue;
             this.btn_Agregar.Font = new System.Drawing.Font("Bahnschrift Light Condensed", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btn_Agregar.ForeColor = System.Drawing.Color.White;
-            this.btn_Agregar.Location = new System.Drawing.Point(32, 197);
+            this.btn_Agregar.Location = new System.Drawing.Point(63, 193);
             this.btn_Agregar.Name = "btn_Agregar";
             this.btn_Agregar.Size = new System.Drawing.Size(187, 34);
             this.btn_Agregar.TabIndex = 7;

@@ -41,13 +41,18 @@
             this.dtg_Datos = new System.Windows.Forms.DataGridView();
             this.btn_Ayuda = new System.Windows.Forms.Button();
             this.btn_Salir = new System.Windows.Forms.Button();
+            this.Resultados = new System.Windows.Forms.ListBox();
+            this.lbl_DestinoMasElegido = new System.Windows.Forms.Label();
+            this.lbl_GananciasNacionales = new System.Windows.Forms.Label();
+            this.lbl_GananciasInternacionales = new System.Windows.Forms.Label();
+            this.lbl_Totales = new System.Windows.Forms.Label();
             this.gb_Ayuda.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtg_Datos)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_HorasDeVuelo
             // 
-            this.btn_HorasDeVuelo.BackColor = System.Drawing.Color.Crimson;
+            this.btn_HorasDeVuelo.BackColor = System.Drawing.Color.PaleTurquoise;
             this.btn_HorasDeVuelo.Font = new System.Drawing.Font("Bahnschrift Light Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btn_HorasDeVuelo.ForeColor = System.Drawing.Color.White;
             this.btn_HorasDeVuelo.Location = new System.Drawing.Point(12, 146);
@@ -59,7 +64,7 @@
             // 
             // btn_Ganancias
             // 
-            this.btn_Ganancias.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btn_Ganancias.BackColor = System.Drawing.Color.PaleTurquoise;
             this.btn_Ganancias.Font = new System.Drawing.Font("Bahnschrift Light Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btn_Ganancias.ForeColor = System.Drawing.Color.White;
             this.btn_Ganancias.Location = new System.Drawing.Point(12, 78);
@@ -71,7 +76,7 @@
             // 
             // btn_ListaDeDestinos
             // 
-            this.btn_ListaDeDestinos.BackColor = System.Drawing.Color.LimeGreen;
+            this.btn_ListaDeDestinos.BackColor = System.Drawing.Color.PaleTurquoise;
             this.btn_ListaDeDestinos.Font = new System.Drawing.Font("Bahnschrift Light Condensed", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btn_ListaDeDestinos.ForeColor = System.Drawing.Color.White;
             this.btn_ListaDeDestinos.Location = new System.Drawing.Point(12, 12);
@@ -83,7 +88,7 @@
             // 
             // btn_ListaDeDestinosPorFacturacion
             // 
-            this.btn_ListaDeDestinosPorFacturacion.BackColor = System.Drawing.Color.Orange;
+            this.btn_ListaDeDestinosPorFacturacion.BackColor = System.Drawing.Color.PaleTurquoise;
             this.btn_ListaDeDestinosPorFacturacion.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_ListaDeDestinosPorFacturacion.ForeColor = System.Drawing.Color.White;
             this.btn_ListaDeDestinosPorFacturacion.Location = new System.Drawing.Point(12, 314);
@@ -95,7 +100,7 @@
             // 
             // btn_OrdenarDeManeraDescendente
             // 
-            this.btn_OrdenarDeManeraDescendente.BackColor = System.Drawing.Color.MediumOrchid;
+            this.btn_OrdenarDeManeraDescendente.BackColor = System.Drawing.Color.SpringGreen;
             this.btn_OrdenarDeManeraDescendente.ForeColor = System.Drawing.Color.White;
             this.btn_OrdenarDeManeraDescendente.Location = new System.Drawing.Point(141, 270);
             this.btn_OrdenarDeManeraDescendente.Name = "btn_OrdenarDeManeraDescendente";
@@ -106,7 +111,7 @@
             // 
             // btn_OrdenarDeManeraAscendente
             // 
-            this.btn_OrdenarDeManeraAscendente.BackColor = System.Drawing.Color.MediumOrchid;
+            this.btn_OrdenarDeManeraAscendente.BackColor = System.Drawing.Color.MediumSpringGreen;
             this.btn_OrdenarDeManeraAscendente.ForeColor = System.Drawing.Color.White;
             this.btn_OrdenarDeManeraAscendente.Location = new System.Drawing.Point(50, 270);
             this.btn_OrdenarDeManeraAscendente.Name = "btn_OrdenarDeManeraAscendente";
@@ -117,7 +122,7 @@
             // 
             // btn_PasajerosPorCantDeVuelos
             // 
-            this.btn_PasajerosPorCantDeVuelos.BackColor = System.Drawing.Color.Magenta;
+            this.btn_PasajerosPorCantDeVuelos.BackColor = System.Drawing.Color.PaleTurquoise;
             this.btn_PasajerosPorCantDeVuelos.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btn_PasajerosPorCantDeVuelos.Location = new System.Drawing.Point(12, 211);
             this.btn_PasajerosPorCantDeVuelos.Name = "btn_PasajerosPorCantDeVuelos";
@@ -164,10 +169,10 @@
             this.dtg_Datos.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllHeaders;
             this.dtg_Datos.BackgroundColor = System.Drawing.Color.White;
             this.dtg_Datos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtg_Datos.Location = new System.Drawing.Point(337, 12);
+            this.dtg_Datos.Location = new System.Drawing.Point(287, 12);
             this.dtg_Datos.Name = "dtg_Datos";
             this.dtg_Datos.RowTemplate.Height = 25;
-            this.dtg_Datos.Size = new System.Drawing.Size(451, 174);
+            this.dtg_Datos.Size = new System.Drawing.Size(501, 174);
             this.dtg_Datos.TabIndex = 19;
             // 
             // btn_Ayuda
@@ -191,11 +196,62 @@
             this.btn_Salir.Text = "SALIR";
             this.btn_Salir.UseVisualStyleBackColor = false;
             // 
+            // Resultados
+            // 
+            this.Resultados.FormattingEnabled = true;
+            this.Resultados.ItemHeight = 15;
+            this.Resultados.Location = new System.Drawing.Point(287, 201);
+            this.Resultados.Name = "Resultados";
+            this.Resultados.Size = new System.Drawing.Size(213, 229);
+            this.Resultados.TabIndex = 24;
+            // 
+            // lbl_DestinoMasElegido
+            // 
+            this.lbl_DestinoMasElegido.AutoSize = true;
+            this.lbl_DestinoMasElegido.Location = new System.Drawing.Point(296, 230);
+            this.lbl_DestinoMasElegido.Name = "lbl_DestinoMasElegido";
+            this.lbl_DestinoMasElegido.Size = new System.Drawing.Size(10, 15);
+            this.lbl_DestinoMasElegido.TabIndex = 25;
+            this.lbl_DestinoMasElegido.Text = ".";
+            // 
+            // lbl_GananciasNacionales
+            // 
+            this.lbl_GananciasNacionales.AutoSize = true;
+            this.lbl_GananciasNacionales.Location = new System.Drawing.Point(296, 278);
+            this.lbl_GananciasNacionales.Name = "lbl_GananciasNacionales";
+            this.lbl_GananciasNacionales.Size = new System.Drawing.Size(10, 15);
+            this.lbl_GananciasNacionales.TabIndex = 26;
+            this.lbl_GananciasNacionales.Text = ".";
+            // 
+            // lbl_GananciasInternacionales
+            // 
+            this.lbl_GananciasInternacionales.AutoSize = true;
+            this.lbl_GananciasInternacionales.Location = new System.Drawing.Point(296, 332);
+            this.lbl_GananciasInternacionales.Name = "lbl_GananciasInternacionales";
+            this.lbl_GananciasInternacionales.Size = new System.Drawing.Size(10, 15);
+            this.lbl_GananciasInternacionales.TabIndex = 27;
+            this.lbl_GananciasInternacionales.Text = ".";
+            // 
+            // lbl_Totales
+            // 
+            this.lbl_Totales.AutoSize = true;
+            this.lbl_Totales.Location = new System.Drawing.Point(296, 392);
+            this.lbl_Totales.Name = "lbl_Totales";
+            this.lbl_Totales.Size = new System.Drawing.Size(10, 15);
+            this.lbl_Totales.TabIndex = 28;
+            this.lbl_Totales.Text = ".";
+            // 
             // MenuEstadisticas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.CadetBlue;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lbl_Totales);
+            this.Controls.Add(this.lbl_GananciasInternacionales);
+            this.Controls.Add(this.lbl_GananciasNacionales);
+            this.Controls.Add(this.lbl_DestinoMasElegido);
+            this.Controls.Add(this.Resultados);
             this.Controls.Add(this.btn_Ayuda);
             this.Controls.Add(this.btn_Salir);
             this.Controls.Add(this.gb_Ayuda);
@@ -214,6 +270,7 @@
             this.gb_Ayuda.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtg_Datos)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -232,5 +289,10 @@
         private System.Windows.Forms.DataGridView dtg_Datos;
         private System.Windows.Forms.Button btn_Ayuda;
         private System.Windows.Forms.Button btn_Salir;
+        private System.Windows.Forms.ListBox Resultados;
+        private System.Windows.Forms.Label lbl_DestinoMasElegido;
+        private System.Windows.Forms.Label lbl_GananciasNacionales;
+        private System.Windows.Forms.Label lbl_GananciasInternacionales;
+        private System.Windows.Forms.Label lbl_Totales;
     }
 }

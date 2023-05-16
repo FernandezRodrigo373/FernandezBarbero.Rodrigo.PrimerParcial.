@@ -44,13 +44,7 @@ namespace Entidades
             listaEmpleados = JsonConvert.DeserializeObject<List<Empleado>>(aux); 
 
           
-            
-            /*listaEmpleados.Add(new Empleado("Rodrigo", "Fernandez", 45, "rodrigo.fernandez", "123"));
-            listaEmpleados.Add(new Empleado("Camila", "Iarussi", 18, "cami.iarussi", "456"));
-            listaEmpleados.Add(new Empleado("Matias", "Carrion", 53, "matias.carrion", "789"));
-            listaEmpleados.Add(new Empleado("Lionel", "Messi", 35, "lionel.messi", "1010"));
-            listaEmpleados.Add(new Empleado("Admin", "Supremo", 35, "admin.supremo", "abc123"));
-            */
+           
             listaDeAviones = new List<Avion>();
             listaDeAviones.Add(new Avion("rojo789d", 100, 2, 2000, 0));
             listaDeAviones.Add(new Avion("azul123f", 125, 4, 3000, 0));
@@ -181,6 +175,23 @@ namespace Entidades
                 }
             }
             return auxCliente;
+        }   
+        public static List<Cliente> BuscarClientePorDni(int dni)
+        {
+            List<Cliente> auxCliente = new List<Cliente>();
+
+            if (Validadora.ValidarNumeroConRango(dni.ToString(), 10000, 3000000))
+            {
+                foreach (Cliente item in listaDeClientes)
+                {
+                    if (item.Dni.Equals(dni))
+                    {
+                        auxCliente.Add(item);
+                    }
+
+                }
+            }
+            return auxCliente;
         }
 
         /// <summary>
@@ -221,6 +232,22 @@ namespace Entidades
             foreach (Vuelo item in listaDeVuelos)
             {
                 if (item.Id == id)
+                {
+                    auxVuelo.Add(item);
+                }
+
+            }
+
+            return auxVuelo;
+        }
+
+        public static List<Avion> BuscarAvion(string matricula)
+        {
+            List<Avion> auxVuelo = new List<Avion>();
+
+            foreach (Avion item in listaDeAviones)
+            {
+                if (item.Matricula == matricula)
                 {
                     auxVuelo.Add(item);
                 }

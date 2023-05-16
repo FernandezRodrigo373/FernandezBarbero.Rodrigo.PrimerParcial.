@@ -39,7 +39,11 @@ namespace UI
             {
                 Empleado empleadoSolicitado = AerolineaSistema.ValidarLoginVendedores(txt_Usuario.Text, txt_Clave.Text);
                 MenuAerolinea menuAerolinea = new MenuAerolinea(empleadoSolicitado);
+
+                RegistroUsuarios.RegistrarAccesoUsuario(empleadoSolicitado.Nombre, empleadoSolicitado.Apellido);
                 menuAerolinea.Show();
+
+
             }
             catch (Exception excepcion)
             {
@@ -59,6 +63,16 @@ namespace UI
             this.Close();
         }
 
+        private void btn_AutocompletarVendedor_Click(object sender, EventArgs e)
+        {
+            txt_Usuario.Text = "sharris@maiden.com.uk";
+            txt_Clave.Text = "eddie666";
+        }
 
+        private void btn_AutocompletarSupervisor_Click(object sender, EventArgs e)
+        {
+            txt_Usuario.Text = "trobinson@super.com";
+            txt_Clave.Text = "12345678";
+        }
     }
 }

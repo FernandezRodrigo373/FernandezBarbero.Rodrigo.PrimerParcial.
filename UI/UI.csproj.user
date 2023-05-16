@@ -19,6 +19,12 @@
     <Compile Update="MenuEstadisticas.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="ModificarAvion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ModificarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="SorteoCliente.cs">
       <SubType>Form</SubType>
     </Compile>

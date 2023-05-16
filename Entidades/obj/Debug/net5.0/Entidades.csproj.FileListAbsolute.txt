@@ -11,3 +11,4 @@ C:\Users\Rodoo\OneDrive\Escritorio\Cosas\UTN 2023\Parcial labo\FernandezBarbero.
 C:\Users\Rodoo\OneDrive\Escritorio\Cosas\UTN 2023\Parcial labo\FernandezBarbero.Rodrigo.PrimerParcial\Entidades\obj\Debug\net5.0\Entidades.pdb
 C:\Users\Rodoo\OneDrive\Escritorio\Cosas\UTN 2023\Parcial labo\FernandezBarbero.Rodrigo.PrimerParcial\Entidades\obj\Debug\net5.0\ref\Entidades.dll
 C:\Users\Rodoo\OneDrive\Escritorio\Cosas\UTN 2023\Parcial labo\FernandezBarbero.Rodrigo.PrimerParcial\Entidades\bin\Debug\net5.0\MOCK_DATA.json
+C:\Users\Rodoo\OneDrive\Escritorio\Cosas\UTN 2023\Parcial labo\FernandezBarbero.Rodrigo.PrimerParcial\Entidades\bin\Debug\net5.0\usuarios.log

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,6 +15,7 @@ namespace UI
     public partial class MenuAerolinea : Form
     {
         List<Vuelo> listaFiltrada;
+        Empleado empleado1;
         public MenuAerolinea(Empleado empleado)
         {
             InitializeComponent();
@@ -46,6 +48,7 @@ namespace UI
 
 
             lbl_Operador.Text = empleado.Nombre + ' ' + empleado.Apellido;
+            lbl_Fecha.Text = DateTime.Now.ToLongDateString();
 
 
             txb_VueloABuscar.Visible = false;
@@ -55,6 +58,8 @@ namespace UI
             btn_BuscarVuelosPorId.Visible = false;
 
             gb_MuestraDatos.Visible = false;
+
+            empleado1 = empleado;
 
         }
         private void MenuAerolinea_Load(object sender, EventArgs e)
@@ -75,31 +80,11 @@ namespace UI
         }
 
 
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            // label1.Text = DateTime.Now.ToLongTimeString();
-            lbl_Fecha.Text = DateTime.Now.ToLongDateString();
-        }
-
-
-
-
 
         private void dataGridView1_DataSourceChanged(object sender, EventArgs e)
         {
             Refresh();
         }
-
-
-
-
-
-
-
-
-
-
-
 
 
         private void verListaDePasajerosToolStripMenuItem_Click(object sender, EventArgs e)
@@ -124,18 +109,9 @@ namespace UI
 
 
 
-
-
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
         }
-
-
-
-
-
-
-
 
 
 
@@ -296,6 +272,38 @@ namespace UI
             gb_MuestraDatos.Visible = true;
 
             lbl_Ayuda.Text = sb.ToString();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            // label1.Text = DateTime.Now.ToLongTimeString();
+            lbl_Fecha.Text = DateTime.Now.ToLongDateString();
+        }
+
+        private void modificarAvionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ModificarAvion menuModificarAvion = new ModificarAvion();
+
+
+            if (menuModificarAvion.ShowDialog() == DialogResult.OK)
+            {
+                dtg_Datos.Refresh();
+            }
+        }
+
+        private void modificarClienteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ModificarCliente menuModificarCliente = new ModificarCliente();
+
+            if (menuModificarCliente.ShowDialog() == DialogResult.OK)
+            {
+                dtg_Datos.Refresh();
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

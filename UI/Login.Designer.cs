@@ -37,6 +37,9 @@
             this.btn_Ingresar = new System.Windows.Forms.Button();
             this.btn_Salir = new System.Windows.Forms.Button();
             this.lbl_Error = new System.Windows.Forms.Label();
+            this.btn_AutocompletarVendedor = new System.Windows.Forms.Button();
+            this.btn_AutocompletarSupervisor = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -94,17 +97,17 @@
             this.btn_Autocompletar.BackColor = System.Drawing.Color.White;
             this.btn_Autocompletar.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_Autocompletar.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.btn_Autocompletar.Location = new System.Drawing.Point(84, 286);
+            this.btn_Autocompletar.Location = new System.Drawing.Point(87, 319);
             this.btn_Autocompletar.Name = "btn_Autocompletar";
-            this.btn_Autocompletar.Size = new System.Drawing.Size(116, 24);
+            this.btn_Autocompletar.Size = new System.Drawing.Size(116, 42);
             this.btn_Autocompletar.TabIndex = 16;
-            this.btn_Autocompletar.Text = "AUTOCOMPLETAR";
+            this.btn_Autocompletar.Text = " ADMIN";
             this.btn_Autocompletar.UseVisualStyleBackColor = false;
             this.btn_Autocompletar.Click += new System.EventHandler(this.btn_Autocompletar_Click_1);
             // 
             // btn_Ingresar
             // 
-            this.btn_Ingresar.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btn_Ingresar.BackColor = System.Drawing.Color.PaleTurquoise;
             this.btn_Ingresar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btn_Ingresar.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_Ingresar.ForeColor = System.Drawing.Color.White;
@@ -121,7 +124,7 @@
             this.btn_Salir.BackColor = System.Drawing.Color.RoyalBlue;
             this.btn_Salir.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_Salir.ForeColor = System.Drawing.Color.White;
-            this.btn_Salir.Location = new System.Drawing.Point(224, 350);
+            this.btn_Salir.Location = new System.Drawing.Point(224, 386);
             this.btn_Salir.Name = "btn_Salir";
             this.btn_Salir.Size = new System.Drawing.Size(75, 32);
             this.btn_Salir.TabIndex = 18;
@@ -133,17 +136,54 @@
             // 
             this.lbl_Error.AutoSize = true;
             this.lbl_Error.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.lbl_Error.Location = new System.Drawing.Point(12, 367);
+            this.lbl_Error.Location = new System.Drawing.Point(6, 395);
             this.lbl_Error.Name = "lbl_Error";
             this.lbl_Error.Size = new System.Drawing.Size(10, 15);
             this.lbl_Error.TabIndex = 17;
             this.lbl_Error.Text = "l";
             // 
+            // btn_AutocompletarVendedor
+            // 
+            this.btn_AutocompletarVendedor.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btn_AutocompletarVendedor.Location = new System.Drawing.Point(6, 319);
+            this.btn_AutocompletarVendedor.Name = "btn_AutocompletarVendedor";
+            this.btn_AutocompletarVendedor.Size = new System.Drawing.Size(75, 41);
+            this.btn_AutocompletarVendedor.TabIndex = 19;
+            this.btn_AutocompletarVendedor.Text = " VENDEDOR";
+            this.btn_AutocompletarVendedor.UseVisualStyleBackColor = true;
+            this.btn_AutocompletarVendedor.Click += new System.EventHandler(this.btn_AutocompletarVendedor_Click);
+            // 
+            // btn_AutocompletarSupervisor
+            // 
+            this.btn_AutocompletarSupervisor.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btn_AutocompletarSupervisor.Location = new System.Drawing.Point(209, 320);
+            this.btn_AutocompletarSupervisor.Name = "btn_AutocompletarSupervisor";
+            this.btn_AutocompletarSupervisor.Size = new System.Drawing.Size(75, 41);
+            this.btn_AutocompletarSupervisor.TabIndex = 20;
+            this.btn_AutocompletarSupervisor.Text = "SUPERVISOR";
+            this.btn_AutocompletarSupervisor.UseVisualStyleBackColor = true;
+            this.btn_AutocompletarSupervisor.Click += new System.EventHandler(this.btn_AutocompletarSupervisor_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(96, 298);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(107, 18);
+            this.label2.TabIndex = 21;
+            this.label2.Text = "AUTOCOMPLETAR";
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(311, 395);
+            this.BackColor = System.Drawing.Color.SeaShell;
+            this.ClientSize = new System.Drawing.Size(311, 430);
+            this.ControlBox = false;
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.btn_AutocompletarSupervisor);
+            this.Controls.Add(this.btn_AutocompletarVendedor);
             this.Controls.Add(this.btn_Salir);
             this.Controls.Add(this.lbl_Error);
             this.Controls.Add(this.btn_Autocompletar);
@@ -154,7 +194,7 @@
             this.Controls.Add(this.lbl_Usuario);
             this.Controls.Add(this.txt_Usuario);
             this.Name = "Login";
-            this.Text = "Form1";
+            this.Text = "Login";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -171,5 +211,8 @@
         private System.Windows.Forms.Button btn_Salir;
         private System.Windows.Forms.Label lbl_Error;
         private System.Windows.Forms.TextBox txt_Usuario;
+        private System.Windows.Forms.Button btn_AutocompletarVendedor;
+        private System.Windows.Forms.Button btn_AutocompletarSupervisor;
+        private System.Windows.Forms.Label label2;
     }
 }

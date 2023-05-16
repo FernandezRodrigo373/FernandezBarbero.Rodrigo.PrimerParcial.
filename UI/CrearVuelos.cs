@@ -32,14 +32,7 @@ namespace UI
 
 
 
-        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (cmb_Origen.Focused && cmb_Origen.SelectedIndex > 15)
-            {
-                cmb_Destino.SelectedIndex = 0;
-                cmb_Destino.Enabled = false;
-            }
-        }
+
 
         private void btn_Agregar_Click(object sender, EventArgs e)
         {
@@ -120,6 +113,17 @@ namespace UI
             dtp_Fecha.MinDate = DateTime.Today;
 
             gb_Ayuda.Visible = false;
+        }
+
+        private void cmb_Destino_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmb_Origen.Focused && cmb_Origen.SelectedIndex > 15 && cmb_Destino.SelectedIndex != 0)
+            {
+                lbl_Mensaje.Text = "Vuelos internacionales solo tienen como destino BS.AS";
+                cmb_Destino.SelectedIndex = 0;
+                cmb_Destino.Enabled = false;
+                btn_Agregar.Enabled = false;    
+            }
         }
     }
 }

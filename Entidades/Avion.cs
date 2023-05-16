@@ -32,14 +32,17 @@ namespace Entidades
         public string Matricula
         {
             get { return matricula; }
+            set { matricula = value; }
         }
         public int CantidadDeAsientos
         {
             get { return cantidadDeAsientos; }
+                set { cantidadDeAsientos = value; }
         }
         public int CantidadDeAsientosPremium
         {
             get { return cantidadDeAsientosPremium; }
+
         }
 
         public int CantidadDeAsientosTurista
@@ -50,11 +53,16 @@ namespace Entidades
         public int CantidadDeBanios
         {
             get { return cantidadDeBanios; }
+            set { cantidadDeBanios = value; }
         }
 
         public int CapacidadBodega
         {
             get { return capacidadBodega; }
+            set
+            {
+                capacidadBodega = value;
+            }
         }
 
         public int HorasDeVuelos
@@ -85,6 +93,32 @@ namespace Entidades
             }
 
             this.HorasDeVuelos = auxHoraDeVuelo;
+        }
+
+        public static bool AvionYaExiste(Avion a)
+        {
+            foreach (Avion item in AerolineaSistema.listaDeAviones)
+            {
+                if (item.Equals(a))
+                {
+
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        public static string AvionYaExiste(Avion a, string dato)
+        {
+            foreach (Avion item in AerolineaSistema.listaDeAviones)
+            {
+                if (item.Equals(a))
+                {
+
+                    return item.ToString() + dato;
+                }
+            }
+            return null;
         }
 
 

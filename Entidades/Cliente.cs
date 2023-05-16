@@ -20,10 +20,21 @@ namespace Entidades
 
         public int Dni { get { return dni; } }
 
-        public string Nombre { get { return nombre; } }
+        public string Nombre { get { return nombre; } set { nombre = value; } }
 
-        public string Apellido { get { return apellido; } }
-        public int Edad { get { return edad; } }
+        public string Apellido
+        {
+            get { return apellido; }
+            set { apellido = value; }
+        }
+        public int Edad 
+        {
+            get
+            { 
+                return edad;
+            }
+            set { Edad = value; }
+        }
 
 
         public static Cliente ObtenerCliente(List<Cliente> listaDeClientes, int index)

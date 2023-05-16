@@ -42,6 +42,7 @@
             this.gb_Ayuda = new System.Windows.Forms.GroupBox();
             this.lbl_Ayuda = new System.Windows.Forms.Label();
             this.lbl_Error = new System.Windows.Forms.Label();
+            this.lbl_Mensaje = new System.Windows.Forms.Label();
             this.gb_Ayuda.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -85,6 +86,7 @@
             this.cmb_Destino.Name = "cmb_Destino";
             this.cmb_Destino.Size = new System.Drawing.Size(239, 23);
             this.cmb_Destino.TabIndex = 11;
+            this.cmb_Destino.SelectedIndexChanged += new System.EventHandler(this.cmb_Destino_SelectedIndexChanged);
             // 
             // txb_Piloto
             // 
@@ -190,11 +192,21 @@
             this.lbl_Error.TabIndex = 23;
             this.lbl_Error.Text = ".";
             // 
+            // lbl_Mensaje
+            // 
+            this.lbl_Mensaje.AutoSize = true;
+            this.lbl_Mensaje.Location = new System.Drawing.Point(10, 306);
+            this.lbl_Mensaje.Name = "lbl_Mensaje";
+            this.lbl_Mensaje.Size = new System.Drawing.Size(10, 15);
+            this.lbl_Mensaje.TabIndex = 24;
+            this.lbl_Mensaje.Text = ".";
+            // 
             // CrearVuelos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(469, 354);
+            this.Controls.Add(this.lbl_Mensaje);
             this.Controls.Add(this.lbl_Error);
             this.Controls.Add(this.btn_Ayuda);
             this.Controls.Add(this.gb_Ayuda);
@@ -234,5 +246,6 @@
         private System.Windows.Forms.GroupBox gb_Ayuda;
         private System.Windows.Forms.Label lbl_Ayuda;
         private System.Windows.Forms.Label lbl_Error;
+        private System.Windows.Forms.Label lbl_Mensaje;
     }
 }

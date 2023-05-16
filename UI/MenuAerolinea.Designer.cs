@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -36,6 +37,7 @@
             this.modificarClienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.avionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.inoformeAvionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.modificarAvionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.vueloToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.buscarVueloToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btn_CrearVuelos = new System.Windows.Forms.Button();
@@ -56,6 +58,8 @@
             this.btn_Ayuda = new System.Windows.Forms.Button();
             this.dtg_Dato2 = new System.Windows.Forms.DataGridView();
             this.btn_Salir = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtg_Datos)).BeginInit();
             this.gb_MuestraDatos.SuspendLayout();
@@ -65,7 +69,7 @@
             // menuStrip1
             // 
             this.menuStrip1.AutoSize = false;
-            this.menuStrip1.BackColor = System.Drawing.Color.RoyalBlue;
+            this.menuStrip1.BackColor = System.Drawing.Color.PaleTurquoise;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.clientesToolStripMenuItem,
             this.avionToolStripMenuItem,
@@ -96,7 +100,7 @@
             // 
             this.listadoToolStripMenuItem.Font = new System.Drawing.Font("Bahnschrift Light Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.listadoToolStripMenuItem.Name = "listadoToolStripMenuItem";
-            this.listadoToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.listadoToolStripMenuItem.Size = new System.Drawing.Size(177, 24);
             this.listadoToolStripMenuItem.Text = "Listado de clientes";
             this.listadoToolStripMenuItem.Click += new System.EventHandler(this.listadoToolStripMenuItem_Click);
             // 
@@ -104,7 +108,7 @@
             // 
             this.buscarClienteToolStripMenuItem.Font = new System.Drawing.Font("Bahnschrift Light Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.buscarClienteToolStripMenuItem.Name = "buscarClienteToolStripMenuItem";
-            this.buscarClienteToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.buscarClienteToolStripMenuItem.Size = new System.Drawing.Size(177, 24);
             this.buscarClienteToolStripMenuItem.Text = "Buscar Cliente";
             this.buscarClienteToolStripMenuItem.Click += new System.EventHandler(this.buscarClienteToolStripMenuItem_Click);
             // 
@@ -112,20 +116,22 @@
             // 
             this.darDeAltaClienteToolStripMenuItem.Font = new System.Drawing.Font("Bahnschrift Light Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.darDeAltaClienteToolStripMenuItem.Name = "darDeAltaClienteToolStripMenuItem";
-            this.darDeAltaClienteToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.darDeAltaClienteToolStripMenuItem.Size = new System.Drawing.Size(177, 24);
             this.darDeAltaClienteToolStripMenuItem.Text = "Dar de Alta Cliente";
             this.darDeAltaClienteToolStripMenuItem.Click += new System.EventHandler(this.darDeAltaClienteToolStripMenuItem_Click);
             // 
             // modificarClienteToolStripMenuItem
             // 
             this.modificarClienteToolStripMenuItem.Name = "modificarClienteToolStripMenuItem";
-            this.modificarClienteToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.modificarClienteToolStripMenuItem.Size = new System.Drawing.Size(177, 24);
             this.modificarClienteToolStripMenuItem.Text = "Modificar Cliente";
+            this.modificarClienteToolStripMenuItem.Click += new System.EventHandler(this.modificarClienteToolStripMenuItem_Click);
             // 
             // avionToolStripMenuItem
             // 
             this.avionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.inoformeAvionToolStripMenuItem});
+            this.inoformeAvionToolStripMenuItem,
+            this.modificarAvionesToolStripMenuItem});
             this.avionToolStripMenuItem.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.avionToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.avionToolStripMenuItem.Name = "avionToolStripMenuItem";
@@ -135,9 +141,16 @@
             // inoformeAvionToolStripMenuItem
             // 
             this.inoformeAvionToolStripMenuItem.Name = "inoformeAvionToolStripMenuItem";
-            this.inoformeAvionToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.inoformeAvionToolStripMenuItem.Size = new System.Drawing.Size(175, 24);
             this.inoformeAvionToolStripMenuItem.Text = "Listado de Aviones";
             this.inoformeAvionToolStripMenuItem.Click += new System.EventHandler(this.inoformeAvionToolStripMenuItem_Click);
+            // 
+            // modificarAvionesToolStripMenuItem
+            // 
+            this.modificarAvionesToolStripMenuItem.Name = "modificarAvionesToolStripMenuItem";
+            this.modificarAvionesToolStripMenuItem.Size = new System.Drawing.Size(175, 24);
+            this.modificarAvionesToolStripMenuItem.Text = "Modificar aviones";
+            this.modificarAvionesToolStripMenuItem.Click += new System.EventHandler(this.modificarAvionesToolStripMenuItem_Click);
             // 
             // vueloToolStripMenuItem
             // 
@@ -152,13 +165,13 @@
             // buscarVueloToolStripMenuItem
             // 
             this.buscarVueloToolStripMenuItem.Name = "buscarVueloToolStripMenuItem";
-            this.buscarVueloToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.buscarVueloToolStripMenuItem.Size = new System.Drawing.Size(148, 24);
             this.buscarVueloToolStripMenuItem.Text = "Buscar Vuelo";
             this.buscarVueloToolStripMenuItem.Click += new System.EventHandler(this.buscarVueloToolStripMenuItem_Click);
             // 
             // btn_CrearVuelos
             // 
-            this.btn_CrearVuelos.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btn_CrearVuelos.BackColor = System.Drawing.Color.PaleTurquoise;
             this.btn_CrearVuelos.Font = new System.Drawing.Font("Bahnschrift Light Condensed", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btn_CrearVuelos.ForeColor = System.Drawing.Color.White;
             this.btn_CrearVuelos.Location = new System.Drawing.Point(12, 102);
@@ -171,7 +184,7 @@
             // 
             // btn_VenderVuelos
             // 
-            this.btn_VenderVuelos.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btn_VenderVuelos.BackColor = System.Drawing.Color.PaleTurquoise;
             this.btn_VenderVuelos.Font = new System.Drawing.Font("Bahnschrift Light Condensed", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btn_VenderVuelos.ForeColor = System.Drawing.Color.White;
             this.btn_VenderVuelos.Location = new System.Drawing.Point(12, 63);
@@ -184,7 +197,7 @@
             // 
             // btn_ListaDeVuelos
             // 
-            this.btn_ListaDeVuelos.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btn_ListaDeVuelos.BackColor = System.Drawing.Color.PaleTurquoise;
             this.btn_ListaDeVuelos.Font = new System.Drawing.Font("Bahnschrift Light Condensed", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btn_ListaDeVuelos.ForeColor = System.Drawing.Color.White;
             this.btn_ListaDeVuelos.Location = new System.Drawing.Point(12, 140);
@@ -197,7 +210,7 @@
             // 
             // btn_BuscarVuelosPorId
             // 
-            this.btn_BuscarVuelosPorId.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btn_BuscarVuelosPorId.BackColor = System.Drawing.Color.PaleTurquoise;
             this.btn_BuscarVuelosPorId.Font = new System.Drawing.Font("Bahnschrift Light Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btn_BuscarVuelosPorId.ForeColor = System.Drawing.Color.White;
             this.btn_BuscarVuelosPorId.Location = new System.Drawing.Point(36, 378);
@@ -210,7 +223,7 @@
             // 
             // btn_BuscarCliente
             // 
-            this.btn_BuscarCliente.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btn_BuscarCliente.BackColor = System.Drawing.Color.PaleTurquoise;
             this.btn_BuscarCliente.Font = new System.Drawing.Font("Bahnschrift Light Condensed", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btn_BuscarCliente.ForeColor = System.Drawing.Color.White;
             this.btn_BuscarCliente.Location = new System.Drawing.Point(36, 334);
@@ -264,7 +277,7 @@
             // 
             // btn_ConsultarEstadisticas
             // 
-            this.btn_ConsultarEstadisticas.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btn_ConsultarEstadisticas.BackColor = System.Drawing.Color.PaleTurquoise;
             this.btn_ConsultarEstadisticas.Font = new System.Drawing.Font("Bahnschrift Light Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btn_ConsultarEstadisticas.ForeColor = System.Drawing.Color.White;
             this.btn_ConsultarEstadisticas.Location = new System.Drawing.Point(12, 474);
@@ -279,7 +292,8 @@
             // 
             this.lbl_OperadorTexto.AutoSize = true;
             this.lbl_OperadorTexto.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbl_OperadorTexto.Location = new System.Drawing.Point(454, 63);
+            this.lbl_OperadorTexto.ForeColor = System.Drawing.Color.White;
+            this.lbl_OperadorTexto.Location = new System.Drawing.Point(834, 63);
             this.lbl_OperadorTexto.Name = "lbl_OperadorTexto";
             this.lbl_OperadorTexto.Size = new System.Drawing.Size(195, 21);
             this.lbl_OperadorTexto.TabIndex = 27;
@@ -289,7 +303,8 @@
             // 
             this.lbl_Operador.AutoSize = true;
             this.lbl_Operador.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbl_Operador.Location = new System.Drawing.Point(655, 63);
+            this.lbl_Operador.ForeColor = System.Drawing.Color.White;
+            this.lbl_Operador.Location = new System.Drawing.Point(1052, 63);
             this.lbl_Operador.Name = "lbl_Operador";
             this.lbl_Operador.Size = new System.Drawing.Size(13, 21);
             this.lbl_Operador.TabIndex = 26;
@@ -300,7 +315,7 @@
             this.lbl_Fecha.AutoSize = true;
             this.lbl_Fecha.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lbl_Fecha.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lbl_Fecha.Location = new System.Drawing.Point(454, 84);
+            this.lbl_Fecha.Location = new System.Drawing.Point(834, 84);
             this.lbl_Fecha.Name = "lbl_Fecha";
             this.lbl_Fecha.Size = new System.Drawing.Size(12, 19);
             this.lbl_Fecha.TabIndex = 25;
@@ -339,7 +354,7 @@
             // dtg_Dato2
             // 
             this.dtg_Dato2.AllowUserToOrderColumns = true;
-            this.dtg_Dato2.BackgroundColor = System.Drawing.Color.RoyalBlue;
+            this.dtg_Dato2.BackgroundColor = System.Drawing.Color.PaleTurquoise;
             this.dtg_Dato2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtg_Dato2.Location = new System.Drawing.Point(912, 178);
             this.dtg_Dato2.Name = "dtg_Dato2";
@@ -349,7 +364,7 @@
             // 
             // btn_Salir
             // 
-            this.btn_Salir.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btn_Salir.BackColor = System.Drawing.Color.PaleTurquoise;
             this.btn_Salir.Font = new System.Drawing.Font("Bahnschrift Light Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btn_Salir.ForeColor = System.Drawing.Color.White;
             this.btn_Salir.Location = new System.Drawing.Point(1217, 474);
@@ -360,12 +375,27 @@
             this.btn_Salir.UseVisualStyleBackColor = false;
             this.btn_Salir.Click += new System.EventHandler(this.btn_Salir_Click);
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(356, 91);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 32;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // MenuAerolinea
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Gray;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1307, 524);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btn_Salir);
             this.Controls.Add(this.gb_MuestraDatos);
             this.Controls.Add(this.btn_Ayuda);
@@ -384,6 +414,7 @@
             this.Controls.Add(this.btn_VenderVuelos);
             this.Controls.Add(this.btn_ListaDeVuelos);
             this.Controls.Add(this.menuStrip1);
+            this.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.Name = "MenuAerolinea";
             this.Text = "MenuAerolinea";
             this.menuStrip1.ResumeLayout(false);
@@ -427,5 +458,8 @@
         private System.Windows.Forms.DataGridView dtg_Dato2;
         private System.Windows.Forms.Button btn_Salir;
         private System.Windows.Forms.ToolStripMenuItem modificarClienteToolStripMenuItem;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.ToolStripMenuItem modificarAvionesToolStripMenuItem;
+        private System.Windows.Forms.Button button1;
     }
 }
