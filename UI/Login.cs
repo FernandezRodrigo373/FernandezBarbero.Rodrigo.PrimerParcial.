@@ -18,9 +18,9 @@ namespace UI
         {
             InitializeComponent();
             lbl_Error.Hide();
+
+            btn_Autocompletar.AutoSize = true;
         }
-
-
 
         public void LimpiarPantalla()
         {
@@ -29,10 +29,6 @@ namespace UI
 
         }
 
-
-
-
-
         private void btn_Ingresar_Click_1(object sender, EventArgs e)
         {
             try
@@ -40,7 +36,7 @@ namespace UI
                 Empleado empleadoSolicitado = AerolineaSistema.ValidarLoginVendedores(txt_Usuario.Text, txt_Clave.Text);
                 MenuAerolinea menuAerolinea = new MenuAerolinea(empleadoSolicitado);
 
-                RegistroUsuarios.RegistrarAccesoUsuario(empleadoSolicitado.Nombre, empleadoSolicitado.Apellido);
+                RegistroUsuarios.RegistrarAccesoUsuario(empleadoSolicitado.Nombre, empleadoSolicitado.Apellido, empleadoSolicitado.Perfil);
                 menuAerolinea.Show();
 
 

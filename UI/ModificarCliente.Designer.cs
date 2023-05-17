@@ -60,9 +60,10 @@
             // btn_Buscar
             // 
             this.btn_Buscar.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.btn_Buscar.Location = new System.Drawing.Point(404, 252);
+            this.btn_Buscar.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btn_Buscar.Location = new System.Drawing.Point(404, 241);
             this.btn_Buscar.Name = "btn_Buscar";
-            this.btn_Buscar.Size = new System.Drawing.Size(124, 23);
+            this.btn_Buscar.Size = new System.Drawing.Size(124, 34);
             this.btn_Buscar.TabIndex = 1;
             this.btn_Buscar.Text = "BUSCAR";
             this.btn_Buscar.UseVisualStyleBackColor = false;
@@ -79,6 +80,7 @@
             // btn_Eliminar
             // 
             this.btn_Eliminar.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.btn_Eliminar.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btn_Eliminar.Location = new System.Drawing.Point(404, 168);
             this.btn_Eliminar.Name = "btn_Eliminar";
             this.btn_Eliminar.Size = new System.Drawing.Size(124, 28);
@@ -90,6 +92,7 @@
             // btn_Modificar
             // 
             this.btn_Modificar.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.btn_Modificar.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btn_Modificar.Location = new System.Drawing.Point(404, 202);
             this.btn_Modificar.Name = "btn_Modificar";
             this.btn_Modificar.Size = new System.Drawing.Size(124, 28);
@@ -101,6 +104,7 @@
             // btn_Confirmar
             // 
             this.btn_Confirmar.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.btn_Confirmar.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btn_Confirmar.Location = new System.Drawing.Point(149, 323);
             this.btn_Confirmar.Name = "btn_Confirmar";
             this.btn_Confirmar.Size = new System.Drawing.Size(100, 23);

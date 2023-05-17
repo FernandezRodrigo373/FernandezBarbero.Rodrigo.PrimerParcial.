@@ -29,4 +29,3 @@ C:\Users\Rodoo\OneDrive\Escritorio\Cosas\UTN 2023\Parcial labo\FernandezBarbero.
 C:\Users\Rodoo\OneDrive\Escritorio\Cosas\UTN 2023\Parcial labo\FernandezBarbero.Rodrigo.PrimerParcial\UI\bin\Debug\net5.0-windows\MOCK_DATA.json
 C:\Users\Rodoo\OneDrive\Escritorio\Cosas\UTN 2023\Parcial labo\FernandezBarbero.Rodrigo.PrimerParcial\UI\obj\Debug\net5.0-windows\UI.ModificarAvion.resources
 C:\Users\Rodoo\OneDrive\Escritorio\Cosas\UTN 2023\Parcial labo\FernandezBarbero.Rodrigo.PrimerParcial\UI\obj\Debug\net5.0-windows\UI.ModificarCliente.resources
-C:\Users\Rodoo\OneDrive\Escritorio\Cosas\UTN 2023\Parcial labo\FernandezBarbero.Rodrigo.PrimerParcial\UI\bin\Debug\net5.0-windows\usuarios.log

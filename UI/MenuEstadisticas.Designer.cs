@@ -88,6 +88,7 @@
             // 
             // btn_ListaDeDestinosPorFacturacion
             // 
+            this.btn_ListaDeDestinosPorFacturacion.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btn_ListaDeDestinosPorFacturacion.BackColor = System.Drawing.Color.PaleTurquoise;
             this.btn_ListaDeDestinosPorFacturacion.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_ListaDeDestinosPorFacturacion.ForeColor = System.Drawing.Color.White;

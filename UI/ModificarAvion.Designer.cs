@@ -63,9 +63,10 @@
             // btn_BuscaAvion
             // 
             this.btn_BuscaAvion.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.btn_BuscaAvion.Location = new System.Drawing.Point(12, 180);
+            this.btn_BuscaAvion.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btn_BuscaAvion.Location = new System.Drawing.Point(12, 170);
             this.btn_BuscaAvion.Name = "btn_BuscaAvion";
-            this.btn_BuscaAvion.Size = new System.Drawing.Size(138, 39);
+            this.btn_BuscaAvion.Size = new System.Drawing.Size(138, 49);
             this.btn_BuscaAvion.TabIndex = 1;
             this.btn_BuscaAvion.Text = "BUSCAR AVION POR MATRICULA";
             this.btn_BuscaAvion.UseVisualStyleBackColor = false;
@@ -81,6 +82,7 @@
             // btn_EliminarAvion
             // 
             this.btn_EliminarAvion.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.btn_EliminarAvion.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btn_EliminarAvion.Location = new System.Drawing.Point(31, 263);
             this.btn_EliminarAvion.Name = "btn_EliminarAvion";
             this.btn_EliminarAvion.Size = new System.Drawing.Size(100, 23);
@@ -92,6 +94,7 @@
             // btn_Modificar
             // 
             this.btn_Modificar.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.btn_Modificar.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btn_Modificar.Location = new System.Drawing.Point(188, 180);
             this.btn_Modificar.Name = "btn_Modificar";
             this.btn_Modificar.Size = new System.Drawing.Size(119, 39);
@@ -103,6 +106,7 @@
             // btn_CrearAvion
             // 
             this.btn_CrearAvion.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.btn_CrearAvion.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btn_CrearAvion.Location = new System.Drawing.Point(342, 180);
             this.btn_CrearAvion.Name = "btn_CrearAvion";
             this.btn_CrearAvion.Size = new System.Drawing.Size(119, 39);
@@ -146,6 +150,7 @@
             // btn_Salir
             // 
             this.btn_Salir.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.btn_Salir.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btn_Salir.Location = new System.Drawing.Point(396, 411);
             this.btn_Salir.Name = "btn_Salir";
             this.btn_Salir.Size = new System.Drawing.Size(75, 23);
@@ -157,6 +162,7 @@
             // btn_Confirmar
             // 
             this.btn_Confirmar.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.btn_Confirmar.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btn_Confirmar.Location = new System.Drawing.Point(355, 341);
             this.btn_Confirmar.Name = "btn_Confirmar";
             this.btn_Confirmar.Size = new System.Drawing.Size(87, 23);
@@ -209,6 +215,7 @@
             // btn_ConfrimarModifica
             // 
             this.btn_ConfrimarModifica.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.btn_ConfrimarModifica.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btn_ConfrimarModifica.Location = new System.Drawing.Point(204, 341);
             this.btn_ConfrimarModifica.Name = "btn_ConfrimarModifica";
             this.btn_ConfrimarModifica.Size = new System.Drawing.Size(87, 23);

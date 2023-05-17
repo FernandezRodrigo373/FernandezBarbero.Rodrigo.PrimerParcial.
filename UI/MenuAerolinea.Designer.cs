@@ -59,7 +59,6 @@
             this.dtg_Dato2 = new System.Windows.Forms.DataGridView();
             this.btn_Salir = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtg_Datos)).BeginInit();
             this.gb_MuestraDatos.SuspendLayout();
@@ -379,23 +378,12 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(356, 91);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 32;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // MenuAerolinea
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1307, 524);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.btn_Salir);
             this.Controls.Add(this.gb_MuestraDatos);
             this.Controls.Add(this.btn_Ayuda);
@@ -460,6 +448,5 @@
         private System.Windows.Forms.ToolStripMenuItem modificarClienteToolStripMenuItem;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.ToolStripMenuItem modificarAvionesToolStripMenuItem;
-        private System.Windows.Forms.Button button1;
     }
 }

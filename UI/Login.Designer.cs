@@ -57,7 +57,7 @@
             this.lbl_Usuario.BackColor = System.Drawing.Color.Transparent;
             this.lbl_Usuario.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lbl_Usuario.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.lbl_Usuario.Location = new System.Drawing.Point(104, 89);
+            this.lbl_Usuario.Location = new System.Drawing.Point(116, 89);
             this.lbl_Usuario.Name = "lbl_Usuario";
             this.lbl_Usuario.Size = new System.Drawing.Size(58, 22);
             this.lbl_Usuario.TabIndex = 11;
@@ -77,7 +77,7 @@
             this.lbl_Clave.BackColor = System.Drawing.Color.Transparent;
             this.lbl_Clave.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lbl_Clave.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.lbl_Clave.Location = new System.Drawing.Point(104, 163);
+            this.lbl_Clave.Location = new System.Drawing.Point(116, 163);
             this.lbl_Clave.Name = "lbl_Clave";
             this.lbl_Clave.Size = new System.Drawing.Size(46, 22);
             this.lbl_Clave.TabIndex = 14;
@@ -107,6 +107,7 @@
             // 
             // btn_Ingresar
             // 
+            this.btn_Ingresar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btn_Ingresar.BackColor = System.Drawing.Color.PaleTurquoise;
             this.btn_Ingresar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btn_Ingresar.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -178,6 +179,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.SeaShell;
             this.ClientSize = new System.Drawing.Size(311, 430);
             this.ControlBox = false;
@@ -193,6 +195,8 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lbl_Usuario);
             this.Controls.Add(this.txt_Usuario);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.MaximizeBox = false;
             this.Name = "Login";
             this.Text = "Login";
             this.ResumeLayout(false);

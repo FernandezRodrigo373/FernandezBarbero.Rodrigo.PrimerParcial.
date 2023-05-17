@@ -47,7 +47,8 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.RoyalBlue;
+            this.button1.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.button1.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(17, 317);
             this.button1.Name = "button1";
@@ -58,7 +59,8 @@
             // 
             // btn_AgregarPasajero
             // 
-            this.btn_AgregarPasajero.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btn_AgregarPasajero.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.btn_AgregarPasajero.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btn_AgregarPasajero.ForeColor = System.Drawing.Color.White;
             this.btn_AgregarPasajero.Location = new System.Drawing.Point(16, 259);
             this.btn_AgregarPasajero.Name = "btn_AgregarPasajero";
@@ -71,7 +73,7 @@
             // dtg_Datos
             // 
             this.dtg_Datos.AllowUserToOrderColumns = true;
-            this.dtg_Datos.BackgroundColor = System.Drawing.Color.RoyalBlue;
+            this.dtg_Datos.BackgroundColor = System.Drawing.Color.PaleTurquoise;
             this.dtg_Datos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtg_Datos.Location = new System.Drawing.Point(12, 12);
             this.dtg_Datos.Name = "dtg_Datos";
@@ -81,7 +83,8 @@
             // 
             // btn_RealizarSorteo
             // 
-            this.btn_RealizarSorteo.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btn_RealizarSorteo.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.btn_RealizarSorteo.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btn_RealizarSorteo.ForeColor = System.Drawing.Color.White;
             this.btn_RealizarSorteo.Location = new System.Drawing.Point(12, 191);
             this.btn_RealizarSorteo.Name = "btn_RealizarSorteo";
@@ -157,7 +160,7 @@
             // 
             this.btn_Salir.BackColor = System.Drawing.Color.RoyalBlue;
             this.btn_Salir.ForeColor = System.Drawing.Color.White;
-            this.btn_Salir.Location = new System.Drawing.Point(750, 383);
+            this.btn_Salir.Location = new System.Drawing.Point(750, 407);
             this.btn_Salir.Name = "btn_Salir";
             this.btn_Salir.Size = new System.Drawing.Size(75, 31);
             this.btn_Salir.TabIndex = 21;
@@ -179,6 +182,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.SeaShell;
             this.ClientSize = new System.Drawing.Size(837, 450);
             this.Controls.Add(this.lbl_Mensaje);
             this.Controls.Add(this.gb_Ayuda);

@@ -9,19 +9,18 @@ namespace Entidades
 {
     public static class RegistroUsuarios
     {
-        private static string logFilePath = "usuarios.log"; 
 
-        public static void RegistrarAccesoUsuario(string nombreUsuario, string apellidoUsuario)
+        public static void RegistrarAccesoUsuario(string nombreUsuario, string apellidoUsuario, string perfil)
         {
-            string fechaHoraActual = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+            string fechaHoraIngreso = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
 
-            string mensaje = $"[{fechaHoraActual}] Usuario '{nombreUsuario + apellidoUsuario}' ha accedido a la aplicación.";
+            string mensaje = $" {fechaHoraIngreso} Usuario '{nombreUsuario +" " + apellidoUsuario }'( {perfil} ) ha accedido a la aplicación.\n";
 
-            using (StreamWriter writer = File.AppendText(logFilePath))
-            {
-                writer.WriteLine(mensaje);
-            }
+            File.AppendAllText("usuarios.log", mensaje);
+
+            //File.ReadAllText(arhivo);
+
         }
-        
+
     }
 }
