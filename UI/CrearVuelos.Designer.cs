@@ -48,7 +48,6 @@
             // 
             // lbl_Origen
             // 
-            this.lbl_Origen.AutoSize = true;
             this.lbl_Origen.BackColor = System.Drawing.Color.RoyalBlue;
             this.lbl_Origen.ForeColor = System.Drawing.Color.White;
             this.lbl_Origen.Location = new System.Drawing.Point(12, 18);
@@ -59,6 +58,8 @@
             // 
             // cmb_Origen
             // 
+            this.cmb_Origen.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.cmb_Origen.BackColor = System.Drawing.Color.White;
             this.cmb_Origen.FormattingEnabled = true;
             this.cmb_Origen.Location = new System.Drawing.Point(14, 36);
@@ -68,7 +69,6 @@
             // 
             // lbl_Destino
             // 
-            this.lbl_Destino.AutoSize = true;
             this.lbl_Destino.BackColor = System.Drawing.Color.RoyalBlue;
             this.lbl_Destino.ForeColor = System.Drawing.Color.White;
             this.lbl_Destino.Location = new System.Drawing.Point(12, 67);
@@ -79,6 +79,8 @@
             // 
             // cmb_Destino
             // 
+            this.cmb_Destino.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.cmb_Destino.BackColor = System.Drawing.Color.White;
             this.cmb_Destino.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmb_Destino.FormattingEnabled = true;
@@ -98,7 +100,6 @@
             // 
             // lbl_Aviones
             // 
-            this.lbl_Aviones.AutoSize = true;
             this.lbl_Aviones.BackColor = System.Drawing.Color.RoyalBlue;
             this.lbl_Aviones.ForeColor = System.Drawing.Color.White;
             this.lbl_Aviones.Location = new System.Drawing.Point(10, 175);
@@ -109,6 +110,8 @@
             // 
             // cmb_Avion
             // 
+            this.cmb_Avion.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.cmb_Avion.BackColor = System.Drawing.Color.White;
             this.cmb_Avion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmb_Avion.FormattingEnabled = true;
@@ -119,6 +122,8 @@
             // 
             // dtp_Fecha
             // 
+            this.dtp_Fecha.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dtp_Fecha.Location = new System.Drawing.Point(12, 130);
             this.dtp_Fecha.Name = "dtp_Fecha";
             this.dtp_Fecha.Size = new System.Drawing.Size(239, 23);
@@ -126,13 +131,14 @@
             // 
             // btn_Salir
             // 
-            this.btn_Salir.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btn_Salir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_Salir.BackColor = System.Drawing.Color.White;
             this.btn_Salir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_Salir.Font = new System.Drawing.Font("Bahnschrift Light Condensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btn_Salir.ForeColor = System.Drawing.Color.White;
-            this.btn_Salir.Location = new System.Drawing.Point(370, 313);
+            this.btn_Salir.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btn_Salir.ForeColor = System.Drawing.Color.PaleTurquoise;
+            this.btn_Salir.Location = new System.Drawing.Point(382, 306);
             this.btn_Salir.Name = "btn_Salir";
-            this.btn_Salir.Size = new System.Drawing.Size(75, 29);
+            this.btn_Salir.Size = new System.Drawing.Size(75, 36);
             this.btn_Salir.TabIndex = 20;
             this.btn_Salir.Text = "SALIR";
             this.btn_Salir.UseVisualStyleBackColor = false;
@@ -140,9 +146,10 @@
             // 
             // btn_Agregar
             // 
-            this.btn_Agregar.BackColor = System.Drawing.Color.RoyalBlue;
-            this.btn_Agregar.Font = new System.Drawing.Font("Bahnschrift Light Condensed", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btn_Agregar.ForeColor = System.Drawing.Color.White;
+            this.btn_Agregar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_Agregar.BackColor = System.Drawing.Color.White;
+            this.btn_Agregar.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btn_Agregar.ForeColor = System.Drawing.Color.PaleTurquoise;
             this.btn_Agregar.Location = new System.Drawing.Point(14, 262);
             this.btn_Agregar.Name = "btn_Agregar";
             this.btn_Agregar.Size = new System.Drawing.Size(239, 35);
@@ -153,6 +160,7 @@
             // 
             // btn_Ayuda
             // 
+            this.btn_Ayuda.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Ayuda.Location = new System.Drawing.Point(370, 18);
             this.btn_Ayuda.Name = "btn_Ayuda";
             this.btn_Ayuda.Size = new System.Drawing.Size(75, 23);
@@ -163,6 +171,7 @@
             // 
             // gb_Ayuda
             // 
+            this.gb_Ayuda.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.gb_Ayuda.BackColor = System.Drawing.Color.White;
             this.gb_Ayuda.Controls.Add(this.lbl_Ayuda);
             this.gb_Ayuda.Location = new System.Drawing.Point(277, 47);
@@ -205,6 +214,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.PaleTurquoise;
             this.ClientSize = new System.Drawing.Size(469, 354);
             this.Controls.Add(this.lbl_Mensaje);
             this.Controls.Add(this.lbl_Error);

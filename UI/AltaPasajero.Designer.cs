@@ -85,7 +85,9 @@
             // dtg_DatosAMostrar
             // 
             this.dtg_DatosAMostrar.AllowUserToOrderColumns = true;
-            this.dtg_DatosAMostrar.BackgroundColor = System.Drawing.Color.RoyalBlue;
+            this.dtg_DatosAMostrar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dtg_DatosAMostrar.BackgroundColor = System.Drawing.Color.PaleTurquoise;
             this.dtg_DatosAMostrar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtg_DatosAMostrar.GridColor = System.Drawing.SystemColors.ActiveBorder;
             this.dtg_DatosAMostrar.Location = new System.Drawing.Point(12, 12);
@@ -96,12 +98,12 @@
             // 
             // btn_BuscarVuelo
             // 
-            this.btn_BuscarVuelo.BackColor = System.Drawing.Color.RoyalBlue;
-            this.btn_BuscarVuelo.Font = new System.Drawing.Font("Bahnschrift Light Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btn_BuscarVuelo.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.btn_BuscarVuelo.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btn_BuscarVuelo.ForeColor = System.Drawing.Color.White;
-            this.btn_BuscarVuelo.Location = new System.Drawing.Point(12, 212);
+            this.btn_BuscarVuelo.Location = new System.Drawing.Point(12, 220);
             this.btn_BuscarVuelo.Name = "btn_BuscarVuelo";
-            this.btn_BuscarVuelo.Size = new System.Drawing.Size(104, 31);
+            this.btn_BuscarVuelo.Size = new System.Drawing.Size(117, 30);
             this.btn_BuscarVuelo.TabIndex = 6;
             this.btn_BuscarVuelo.Text = "Buscar Vuelo";
             this.btn_BuscarVuelo.UseVisualStyleBackColor = false;
@@ -109,12 +111,13 @@
             // 
             // btn_BuscarCliente
             // 
-            this.btn_BuscarCliente.BackColor = System.Drawing.Color.RoyalBlue;
-            this.btn_BuscarCliente.Font = new System.Drawing.Font("Bahnschrift Light Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btn_BuscarCliente.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btn_BuscarCliente.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.btn_BuscarCliente.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btn_BuscarCliente.ForeColor = System.Drawing.Color.White;
             this.btn_BuscarCliente.Location = new System.Drawing.Point(12, 177);
             this.btn_BuscarCliente.Name = "btn_BuscarCliente";
-            this.btn_BuscarCliente.Size = new System.Drawing.Size(104, 29);
+            this.btn_BuscarCliente.Size = new System.Drawing.Size(118, 29);
             this.btn_BuscarCliente.TabIndex = 5;
             this.btn_BuscarCliente.Text = "Buscar Cliente";
             this.btn_BuscarCliente.UseVisualStyleBackColor = false;
@@ -122,14 +125,14 @@
             // 
             // txb_IdVuelo
             // 
-            this.txb_IdVuelo.Location = new System.Drawing.Point(136, 220);
+            this.txb_IdVuelo.Location = new System.Drawing.Point(136, 227);
             this.txb_IdVuelo.Name = "txb_IdVuelo";
             this.txb_IdVuelo.Size = new System.Drawing.Size(100, 23);
             this.txb_IdVuelo.TabIndex = 8;
             // 
             // txb_NombreCliente
             // 
-            this.txb_NombreCliente.Location = new System.Drawing.Point(136, 183);
+            this.txb_NombreCliente.Location = new System.Drawing.Point(136, 182);
             this.txb_NombreCliente.Name = "txb_NombreCliente";
             this.txb_NombreCliente.Size = new System.Drawing.Size(100, 23);
             this.txb_NombreCliente.TabIndex = 7;
@@ -170,9 +173,11 @@
             // 
             // btn_CalcularPrecio
             // 
-            this.btn_CalcularPrecio.BackColor = System.Drawing.Color.RoyalBlue;
-            this.btn_CalcularPrecio.Font = new System.Drawing.Font("Bahnschrift Light Condensed", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btn_CalcularPrecio.ForeColor = System.Drawing.Color.White;
+            this.btn_CalcularPrecio.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_CalcularPrecio.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.btn_CalcularPrecio.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btn_CalcularPrecio.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.btn_CalcularPrecio.Location = new System.Drawing.Point(413, 275);
             this.btn_CalcularPrecio.Name = "btn_CalcularPrecio";
             this.btn_CalcularPrecio.Size = new System.Drawing.Size(200, 29);
@@ -184,6 +189,8 @@
             // dtg_DatosAMostrar2
             // 
             this.dtg_DatosAMostrar2.AllowUserToOrderColumns = true;
+            this.dtg_DatosAMostrar2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dtg_DatosAMostrar2.BackgroundColor = System.Drawing.Color.White;
             this.dtg_DatosAMostrar2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtg_DatosAMostrar2.Location = new System.Drawing.Point(255, 168);
@@ -204,8 +211,9 @@
             // 
             // btn_FinalizarOperacion
             // 
-            this.btn_FinalizarOperacion.BackColor = System.Drawing.Color.RoyalBlue;
-            this.btn_FinalizarOperacion.Font = new System.Drawing.Font("Bahnschrift Light Condensed", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btn_FinalizarOperacion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_FinalizarOperacion.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.btn_FinalizarOperacion.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btn_FinalizarOperacion.ForeColor = System.Drawing.Color.White;
             this.btn_FinalizarOperacion.Location = new System.Drawing.Point(637, 275);
             this.btn_FinalizarOperacion.Name = "btn_FinalizarOperacion";
@@ -235,7 +243,7 @@
             // 
             // gb_Bodega
             // 
-            this.gb_Bodega.BackColor = System.Drawing.Color.SlateBlue;
+            this.gb_Bodega.BackColor = System.Drawing.Color.Plum;
             this.gb_Bodega.Controls.Add(this.label2);
             this.gb_Bodega.Controls.Add(this.label1);
             this.gb_Bodega.Controls.Add(this.txb_PesoValija2);
@@ -281,7 +289,7 @@
             // 
             // gb_Extras
             // 
-            this.gb_Extras.BackColor = System.Drawing.Color.SlateBlue;
+            this.gb_Extras.BackColor = System.Drawing.Color.Plum;
             this.gb_Extras.Controls.Add(this.chb_Peliculas);
             this.gb_Extras.Controls.Add(this.chb_Comida);
             this.gb_Extras.Controls.Add(this.chb_Wifi);
@@ -324,7 +332,7 @@
             // 
             // gb_Clase
             // 
-            this.gb_Clase.BackColor = System.Drawing.Color.SlateBlue;
+            this.gb_Clase.BackColor = System.Drawing.Color.Plum;
             this.gb_Clase.Controls.Add(this.rb_ClasePremium);
             this.gb_Clase.Controls.Add(this.rb_ClaseTurista);
             this.gb_Clase.Location = new System.Drawing.Point(32, 310);
@@ -358,7 +366,7 @@
             // 
             // gb_EquipajeDeMano
             // 
-            this.gb_EquipajeDeMano.BackColor = System.Drawing.Color.SlateBlue;
+            this.gb_EquipajeDeMano.BackColor = System.Drawing.Color.Plum;
             this.gb_EquipajeDeMano.Controls.Add(this.rb_NoLLevaBolsoDeMano);
             this.gb_EquipajeDeMano.Controls.Add(this.rb_LlevaBolsoDeMano);
             this.gb_EquipajeDeMano.Location = new System.Drawing.Point(32, 429);
@@ -392,7 +400,7 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.BackColor = System.Drawing.Color.SlateBlue;
+            this.groupBox3.BackColor = System.Drawing.Color.Plum;
             this.groupBox3.Controls.Add(this.label4);
             this.groupBox3.Controls.Add(this.label3);
             this.groupBox3.Controls.Add(this.rb_CantPasajes4);
@@ -480,7 +488,8 @@
             // 
             // btn_Salir
             // 
-            this.btn_Salir.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btn_Salir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_Salir.BackColor = System.Drawing.Color.PaleTurquoise;
             this.btn_Salir.Font = new System.Drawing.Font("Bahnschrift Light Condensed", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btn_Salir.ForeColor = System.Drawing.Color.White;
             this.btn_Salir.Location = new System.Drawing.Point(827, 617);
@@ -537,6 +546,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.SeaShell;
             this.ClientSize = new System.Drawing.Size(917, 650);
             this.Controls.Add(this.lbl_ConfirmacionPasajero);
             this.Controls.Add(this.groupBox2);

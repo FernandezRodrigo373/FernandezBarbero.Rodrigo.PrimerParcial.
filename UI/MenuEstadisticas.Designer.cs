@@ -52,9 +52,9 @@
             // 
             // btn_HorasDeVuelo
             // 
-            this.btn_HorasDeVuelo.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.btn_HorasDeVuelo.Font = new System.Drawing.Font("Bahnschrift Light Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btn_HorasDeVuelo.ForeColor = System.Drawing.Color.White;
+            this.btn_HorasDeVuelo.BackColor = System.Drawing.Color.White;
+            this.btn_HorasDeVuelo.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btn_HorasDeVuelo.ForeColor = System.Drawing.Color.PaleTurquoise;
             this.btn_HorasDeVuelo.Location = new System.Drawing.Point(12, 146);
             this.btn_HorasDeVuelo.Name = "btn_HorasDeVuelo";
             this.btn_HorasDeVuelo.Size = new System.Drawing.Size(257, 40);
@@ -64,9 +64,9 @@
             // 
             // btn_Ganancias
             // 
-            this.btn_Ganancias.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.btn_Ganancias.Font = new System.Drawing.Font("Bahnschrift Light Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btn_Ganancias.ForeColor = System.Drawing.Color.White;
+            this.btn_Ganancias.BackColor = System.Drawing.Color.White;
+            this.btn_Ganancias.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btn_Ganancias.ForeColor = System.Drawing.Color.PaleTurquoise;
             this.btn_Ganancias.Location = new System.Drawing.Point(12, 78);
             this.btn_Ganancias.Name = "btn_Ganancias";
             this.btn_Ganancias.Size = new System.Drawing.Size(257, 42);
@@ -76,9 +76,9 @@
             // 
             // btn_ListaDeDestinos
             // 
-            this.btn_ListaDeDestinos.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.btn_ListaDeDestinos.Font = new System.Drawing.Font("Bahnschrift Light Condensed", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btn_ListaDeDestinos.ForeColor = System.Drawing.Color.White;
+            this.btn_ListaDeDestinos.BackColor = System.Drawing.Color.White;
+            this.btn_ListaDeDestinos.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btn_ListaDeDestinos.ForeColor = System.Drawing.Color.PaleTurquoise;
             this.btn_ListaDeDestinos.Location = new System.Drawing.Point(12, 12);
             this.btn_ListaDeDestinos.Name = "btn_ListaDeDestinos";
             this.btn_ListaDeDestinos.Size = new System.Drawing.Size(257, 42);
@@ -89,9 +89,9 @@
             // btn_ListaDeDestinosPorFacturacion
             // 
             this.btn_ListaDeDestinosPorFacturacion.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btn_ListaDeDestinosPorFacturacion.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.btn_ListaDeDestinosPorFacturacion.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_ListaDeDestinosPorFacturacion.ForeColor = System.Drawing.Color.White;
+            this.btn_ListaDeDestinosPorFacturacion.BackColor = System.Drawing.Color.White;
+            this.btn_ListaDeDestinosPorFacturacion.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btn_ListaDeDestinosPorFacturacion.ForeColor = System.Drawing.Color.PaleTurquoise;
             this.btn_ListaDeDestinosPorFacturacion.Location = new System.Drawing.Point(12, 314);
             this.btn_ListaDeDestinosPorFacturacion.Name = "btn_ListaDeDestinosPorFacturacion";
             this.btn_ListaDeDestinosPorFacturacion.Size = new System.Drawing.Size(257, 40);
@@ -123,8 +123,9 @@
             // 
             // btn_PasajerosPorCantDeVuelos
             // 
-            this.btn_PasajerosPorCantDeVuelos.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.btn_PasajerosPorCantDeVuelos.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btn_PasajerosPorCantDeVuelos.BackColor = System.Drawing.Color.White;
+            this.btn_PasajerosPorCantDeVuelos.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btn_PasajerosPorCantDeVuelos.ForeColor = System.Drawing.Color.PaleTurquoise;
             this.btn_PasajerosPorCantDeVuelos.Location = new System.Drawing.Point(12, 211);
             this.btn_PasajerosPorCantDeVuelos.Name = "btn_PasajerosPorCantDeVuelos";
             this.btn_PasajerosPorCantDeVuelos.Size = new System.Drawing.Size(257, 53);
@@ -246,7 +247,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.CadetBlue;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.lbl_Totales);
             this.Controls.Add(this.lbl_GananciasInternacionales);
@@ -265,6 +266,7 @@
             this.Controls.Add(this.btn_HorasDeVuelo);
             this.Controls.Add(this.btn_Ganancias);
             this.Controls.Add(this.btn_ListaDeDestinos);
+            this.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.Name = "MenuEstadisticas";
             this.Text = "MenuEstadisticas";
             this.gb_Ayuda.ResumeLayout(false);

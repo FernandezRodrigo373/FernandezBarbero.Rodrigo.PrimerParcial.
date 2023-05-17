@@ -151,7 +151,7 @@
             // 
             this.btn_Salir.BackColor = System.Drawing.Color.PaleTurquoise;
             this.btn_Salir.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btn_Salir.Location = new System.Drawing.Point(396, 411);
+            this.btn_Salir.Location = new System.Drawing.Point(396, 381);
             this.btn_Salir.Name = "btn_Salir";
             this.btn_Salir.Size = new System.Drawing.Size(75, 23);
             this.btn_Salir.TabIndex = 11;
@@ -174,7 +174,7 @@
             // lbl_CantidadDeAviones
             // 
             this.lbl_CantidadDeAviones.AutoSize = true;
-            this.lbl_CantidadDeAviones.Location = new System.Drawing.Point(22, 415);
+            this.lbl_CantidadDeAviones.Location = new System.Drawing.Point(12, 385);
             this.lbl_CantidadDeAviones.Name = "lbl_CantidadDeAviones";
             this.lbl_CantidadDeAviones.Size = new System.Drawing.Size(10, 15);
             this.lbl_CantidadDeAviones.TabIndex = 13;
@@ -229,7 +229,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SeaShell;
-            this.ClientSize = new System.Drawing.Size(483, 450);
+            this.ClientSize = new System.Drawing.Size(483, 416);
             this.ControlBox = false;
             this.Controls.Add(this.btn_ConfrimarModifica);
             this.Controls.Add(this.txb_ModificaBodega);

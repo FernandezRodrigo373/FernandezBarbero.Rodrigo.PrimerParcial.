@@ -19,7 +19,6 @@ namespace UI
             InitializeComponent();
             lbl_Error.Hide();
 
-            btn_Autocompletar.AutoSize = true;
         }
 
         public void LimpiarPantalla()
@@ -31,20 +30,30 @@ namespace UI
 
         private void btn_Ingresar_Click_1(object sender, EventArgs e)
         {
-            try
+            if (!String.IsNullOrEmpty( txt_Usuario.Text) && !String.IsNullOrEmpty(txt_Clave.Text))
             {
-                Empleado empleadoSolicitado = AerolineaSistema.ValidarLoginVendedores(txt_Usuario.Text, txt_Clave.Text);
-                MenuAerolinea menuAerolinea = new MenuAerolinea(empleadoSolicitado);
-
-                RegistroUsuarios.RegistrarAccesoUsuario(empleadoSolicitado.Nombre, empleadoSolicitado.Apellido, empleadoSolicitado.Perfil);
-                menuAerolinea.Show();
 
 
+                try
+                {
+                    Empleado empleadoSolicitado = AerolineaSistema.ValidarLoginVendedores(txt_Usuario.Text, txt_Clave.Text);
+                    MenuAerolinea menuAerolinea = new MenuAerolinea(empleadoSolicitado);
+
+                    RegistroUsuarios.RegistrarAccesoUsuario(empleadoSolicitado.Nombre, empleadoSolicitado.Apellido, empleadoSolicitado.Perfil);
+                    menuAerolinea.Show();
+
+
+                }
+                catch (Exception excepcion)
+                {
+                    lbl_Error.Show();
+                    lbl_Error.Text = excepcion.Message;
+                }
             }
-            catch (Exception excepcion)
+            else
             {
                 lbl_Error.Show();
-                lbl_Error.Text = excepcion.Message;
+                lbl_Error.Text = "ERROR";
             }
         }
 

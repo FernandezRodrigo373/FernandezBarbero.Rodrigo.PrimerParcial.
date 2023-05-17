@@ -43,6 +43,8 @@
             // 
             // txb_Dni
             // 
+            this.txb_Dni.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txb_Dni.Location = new System.Drawing.Point(42, 21);
             this.txb_Dni.Name = "txb_Dni";
             this.txb_Dni.PlaceholderText = "DNI";
@@ -51,6 +53,8 @@
             // 
             // txb_Nombre
             // 
+            this.txb_Nombre.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txb_Nombre.Location = new System.Drawing.Point(42, 61);
             this.txb_Nombre.Name = "txb_Nombre";
             this.txb_Nombre.PlaceholderText = "Nombre";
@@ -59,6 +63,8 @@
             // 
             // txb_Apellido
             // 
+            this.txb_Apellido.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txb_Apellido.Location = new System.Drawing.Point(42, 101);
             this.txb_Apellido.Name = "txb_Apellido";
             this.txb_Apellido.PlaceholderText = "Apellido";
@@ -67,6 +73,8 @@
             // 
             // txb_Edad
             // 
+            this.txb_Edad.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txb_Edad.Location = new System.Drawing.Point(42, 141);
             this.txb_Edad.Name = "txb_Edad";
             this.txb_Edad.PlaceholderText = "Edad";
@@ -75,19 +83,21 @@
             // 
             // btn_Agregar
             // 
-            this.btn_Agregar.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btn_Agregar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_Agregar.BackColor = System.Drawing.Color.PaleTurquoise;
             this.btn_Agregar.Font = new System.Drawing.Font("Bahnschrift Light Condensed", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btn_Agregar.ForeColor = System.Drawing.Color.White;
             this.btn_Agregar.Location = new System.Drawing.Point(63, 193);
             this.btn_Agregar.Name = "btn_Agregar";
             this.btn_Agregar.Size = new System.Drawing.Size(187, 34);
             this.btn_Agregar.TabIndex = 7;
-            this.btn_Agregar.Text = "Agregar";
+            this.btn_Agregar.Text = "AGREGAR";
             this.btn_Agregar.UseVisualStyleBackColor = false;
             this.btn_Agregar.Click += new System.EventHandler(this.btn_Agregar_Click);
             // 
             // gb_Datos
             // 
+            this.gb_Datos.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.gb_Datos.BackColor = System.Drawing.Color.White;
             this.gb_Datos.Controls.Add(this.lbl_Ayuda);
             this.gb_Datos.Location = new System.Drawing.Point(12, 262);
@@ -106,6 +116,7 @@
             // 
             // btn_Ayuda
             // 
+            this.btn_Ayuda.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.btn_Ayuda.Location = new System.Drawing.Point(260, 242);
             this.btn_Ayuda.Name = "btn_Ayuda";
             this.btn_Ayuda.Size = new System.Drawing.Size(75, 23);
@@ -116,7 +127,8 @@
             // 
             // btn_Salir
             // 
-            this.btn_Salir.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btn_Salir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_Salir.BackColor = System.Drawing.Color.PaleTurquoise;
             this.btn_Salir.Font = new System.Drawing.Font("Bahnschrift Light Condensed", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btn_Salir.ForeColor = System.Drawing.Color.White;
             this.btn_Salir.Location = new System.Drawing.Point(260, 388);
@@ -129,6 +141,7 @@
             // 
             // lbl_Error
             // 
+            this.lbl_Error.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lbl_Error.AutoSize = true;
             this.lbl_Error.BackColor = System.Drawing.Color.White;
             this.lbl_Error.Location = new System.Drawing.Point(12, 397);
@@ -141,6 +154,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.SeaShell;
             this.ClientSize = new System.Drawing.Size(351, 430);
             this.Controls.Add(this.lbl_Error);
             this.Controls.Add(this.btn_Salir);

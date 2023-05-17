@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Entidades.AerolineaSistema" Collapsed="true">
+    <Position X="13.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgEAAAh4AQRCAAAIAABgIQAIAAgYQgAAgAAEQAAAYAA=</HashCode>
+      <FileName>AerolineaSistema.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entidades.Avion" Collapsed="true">
+    <Position X="15" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAQAAAIEAAACAAEAABIAABBQAAASCAAAAAgAQAAAAA=</HashCode>
+      <FileName>Avion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entidades.Cliente" Collapsed="true">
+    <Position X="8.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAUBAAAAAAAEggAAgAAAAACAQoAAAAAAQAAAAAA=</HashCode>
+      <FileName>Cliente.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entidades.Destino" Collapsed="true">
+    <Position X="16.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIEAAACCAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Destino.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entidades.Empleado" Collapsed="true">
+    <Position X="6.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAEAQAAhAAAAIQAAACAAAAQAAAAEAA=</HashCode>
+      <FileName>Empleado.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entidades.Origen" Collapsed="true">
+    <Position X="13.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAACAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Origen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entidades.Pasajero" Collapsed="true">
+    <Position X="10.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAEEgAABgAAEAAAAAoAAAKEBAACBAAA=</HashCode>
+      <FileName>Pasajero.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entidades.Persona" Collapsed="true">
+    <Position X="8.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAACAAAAAAAAAAAAAABAAAAIAAAAAAAA=</HashCode>
+      <FileName>Persona.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entidades.RegistroUsuarios" Collapsed="true">
+    <Position X="15" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>RegistroUsuarios.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entidades.Validadora" Collapsed="true">
+    <Position X="16.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Validadora.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entidades.Vuelo" Collapsed="true">
+    <Position X="13.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAKCgAAAARAgACCQIAIIAKCAJCAAAACgEAAEgDACgo=</HashCode>
+      <FileName>Vuelo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="Entidades.eDestinos" Collapsed="true">
+    <Position X="15" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAABAAMoCEAIQAAAAAIAogQMAAAACEAAAA=</HashCode>
+      <FileName>Destino.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Entidades.eOrigen" Collapsed="true">
+    <Position X="13.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAABAAMoCEAIQAAAAAIAogQMAAAACEAAAA=</HashCode>
+      <FileName>Origen.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Entidades.eEquipaje" Collapsed="true">
+    <Position X="16.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAEAAAAABAAAABAAAAAA=</HashCode>
+      <FileName>Pasajero.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Entidades.eClase" Collapsed="true">
+    <Position X="13.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pasajero.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

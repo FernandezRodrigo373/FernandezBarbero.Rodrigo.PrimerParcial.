@@ -7,7 +7,7 @@
 
 * **Diagrama de clases:**
 
-![visual studio code logo](https://lh3.googleusercontent.com/_u_LgI8BB4IvKD3I00qGaxBklvc1R0OTtyOlqFeKuFKEnFeeAotd6JjpGLuZcWWeT8GANsv8eBaYzClqhZ9LllQU5WObvosQWM3qv1CT53UILPuFOTxiF6MeVZ-ifKKUnzZ2TaAklEw-Y02mvd4wqA9lQlmVKblvy2daKubgqmVtroTIUQwrm5qu0f6aJm5OIud4zmNAp3Mss59ZLnVwyc76DRZs3TAPQbfHXnnuO9_X5JdcP4ID0zewrjEqWfvBeyrDELiPu43DmeWziD-NMeooq_TJo0SrnoS1GXTH958SUkI6T67FC5VH74PawvjxxBk8XSC7BhXJRmz8eVppWEsWG3kUGo4I2AFawBdBv0SnP3aaJn2-DvRpIjGjYV1qkVosVfI4sUZzaUvz-F6JN9uSmlsxpQH42Q49bL-pgbmmcVvU5qojOuKgETNv--UCRgSrGqnasqhTn0BfT1XLdAac1gs2J-zy0UYU5s6qyXkuoFOFciHRzHbgMe0UrC6auNFXErCo1vBMU60AQ4JxTehmrUG63ARccicKs0mGDOjgdZbWmQ_wQxpw1q6TBM7o_ThF47vK-1vKEJLAMJyUouzjeHqvjiKKy-jLFCMzWPlD9X5OfougePCrw8vC0kEU90cy01qrX6JX43vwMC5f7YlcwMNFbS8xT7pLsPtE-fC5wiJAwx0-Q5Jza7FiGEPc5NFsgo5l_1SVcSUCHddBI_dSzC1BaOp4BrxHYEXUWViljzU1sQDRsWbyTxwuLwqd6-kJqo5YhZuvhoNvK4HR9KaCDQvhzj8JAlbCo3zEGsq-wCgtyd9TAB9vt8X0tlPqIFuPpyKgd7ms9HibIM7ie2MD6nAxosXUhpzEuawLXK6Lf634s7XxBmM80FixFGiN68z7w7iA0zpUiTY1YPINXcoas8G3GRZ-3_Wtug2AbwY-NkzUzyl_pQ65JgTJIBevDzMgxMGiEUyBF6Trrg=w1183-h367-no?authuser=0)
+![visual studio code logo](https://photos.app.goo.gl/n5vyHnXjziHZsJH7A)
 
 
 
@@ -20,8 +20,8 @@ Para recorrer las listas de datos y poder tomar datos de ellas.
 
      Tema 2:
 La aplicacion esta dividida en clases:
-Se utiliza una clase estatica (AerolineaSistema) que va a hardcodear datos y va a ser llamada por otras clases. Decidi hacerla estatica porque es una clase que no la instancio en ningun momento y porque funciona de manera general con el resto de las clases.
-Utilice metodos estaticos para metodos que solo realizan una tarea concreta y son llamdados en distintos lugares del codigo para evitar la repeticion y el DRY.
+Se utiliza una clase estatica (AerolineaSistema) que va a manejar datos (mediante serializacion/deserializacion) y va a ser llamada por otras clases. Decidi hacerla estatica porque es una clase que no la instancio en ningun momento y porque funciona de manera general con el resto de las clases.
+Utilice metodos estaticos para metodos que solo realizan una tarea concreta y son llamados en distintos lugares del codigo para evitar la repeticion y el DRY.
 
      Tema 3:
 Programación orientada a objetos: Se utilizo un paradigma en el cual se tomen objetos de la vida real para resolver un problema. En este caso objetos existentes en una aerolinea
@@ -54,14 +54,17 @@ Clases abstractas - polimorfismo: Se utilizo la clase persona como englobadora d
 Polimorfismo: En la clase Persona se utiliza metodo para enviar un mensaje el cual lo sobreescribe la clase Cliente y modifica su funcionalidad.
 Ademas se sobreescribe Equals para comparar objetos en listas, GetHashCode (para comparar el codigo recibido y que no sea el mismo) y el ToString para imprimir los datos del objeto
 
+    Tema 10: Serializacion/deserializacion: se utilizo para el manejo de datos de las entidades, se cargaron los datos de los usuarios del sistema mediante la deserializacion y se los guardo en una lista
+
 Extra: Uso de Biblioteca externa Regex para validar numeros y letras.
 
 ****************
 ****************
 
+ **Creacion archivo "usuario.log:** El archivo se creo dentro de la carpeta UI\bin\Debug\net5.0-windows y se pueden visualizar como se van cargando los datos
 
  **Propuesta de valor agregado:** Realice un apartado que por medio de un usuario administrador, permita realizar un sorteo de entre la lista de clientes y asi añadirlo a un vuelo ya generado.
 
-**Uso:** Se debe ingresar como usuario administrador con los siguientes datos: **Usuario:** "admin.supremo"
-**Clave:** "abc123".
-Esto permitira la existencia de un nuevo boton en ROJO, que permite realizar sorteos. Tomando el dato de la persona de la lista de clientes registrada y permitiendo asignar a la misma a un vuelo (cliqueando en el datagrid de los vuelos el elegido) como parte del premio y muestra una lista de clientes ya ganadores del sorteo.
+**Uso:** Se debe ingresar como usuario administrador con los siguientes datos: **Usuario:** "admin@admin.com"
+**Clave:** "12345678".
+Esto permitira la existencia de un nuevo boton en ROSA, que permite realizar sorteos. Tomando el dato de la persona de la lista de clientes registrada y permitiendo asignar a la misma a un vuelo (cliqueando en el datagrid de los vuelos el elegido) como parte del premio y muestra una lista de clientes ya ganadores del sorteo.

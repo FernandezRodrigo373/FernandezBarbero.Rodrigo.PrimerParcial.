@@ -170,9 +170,9 @@
             // 
             // btn_CrearVuelos
             // 
-            this.btn_CrearVuelos.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.btn_CrearVuelos.BackColor = System.Drawing.Color.White;
             this.btn_CrearVuelos.Font = new System.Drawing.Font("Bahnschrift Light Condensed", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btn_CrearVuelos.ForeColor = System.Drawing.Color.White;
+            this.btn_CrearVuelos.ForeColor = System.Drawing.Color.PaleTurquoise;
             this.btn_CrearVuelos.Location = new System.Drawing.Point(12, 102);
             this.btn_CrearVuelos.Name = "btn_CrearVuelos";
             this.btn_CrearVuelos.Size = new System.Drawing.Size(165, 32);
@@ -183,9 +183,9 @@
             // 
             // btn_VenderVuelos
             // 
-            this.btn_VenderVuelos.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.btn_VenderVuelos.BackColor = System.Drawing.Color.White;
             this.btn_VenderVuelos.Font = new System.Drawing.Font("Bahnschrift Light Condensed", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btn_VenderVuelos.ForeColor = System.Drawing.Color.White;
+            this.btn_VenderVuelos.ForeColor = System.Drawing.Color.PaleTurquoise;
             this.btn_VenderVuelos.Location = new System.Drawing.Point(12, 63);
             this.btn_VenderVuelos.Name = "btn_VenderVuelos";
             this.btn_VenderVuelos.Size = new System.Drawing.Size(165, 33);
@@ -196,9 +196,9 @@
             // 
             // btn_ListaDeVuelos
             // 
-            this.btn_ListaDeVuelos.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.btn_ListaDeVuelos.BackColor = System.Drawing.Color.White;
             this.btn_ListaDeVuelos.Font = new System.Drawing.Font("Bahnschrift Light Condensed", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btn_ListaDeVuelos.ForeColor = System.Drawing.Color.White;
+            this.btn_ListaDeVuelos.ForeColor = System.Drawing.Color.PaleTurquoise;
             this.btn_ListaDeVuelos.Location = new System.Drawing.Point(12, 140);
             this.btn_ListaDeVuelos.Name = "btn_ListaDeVuelos";
             this.btn_ListaDeVuelos.Size = new System.Drawing.Size(165, 32);
@@ -263,7 +263,7 @@
             // 
             // btn_RealizarSorteo
             // 
-            this.btn_RealizarSorteo.BackColor = System.Drawing.Color.Crimson;
+            this.btn_RealizarSorteo.BackColor = System.Drawing.Color.HotPink;
             this.btn_RealizarSorteo.Font = new System.Drawing.Font("Bahnschrift Light Condensed", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btn_RealizarSorteo.ForeColor = System.Drawing.Color.White;
             this.btn_RealizarSorteo.Location = new System.Drawing.Point(198, 477);

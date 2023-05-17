@@ -48,25 +48,25 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.button1.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button1.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(17, 317);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(173, 43);
+            this.button1.Size = new System.Drawing.Size(173, 55);
             this.button1.TabIndex = 17;
-            this.button1.Text = "Ver lista de Ganadores";
+            this.button1.Text = "VER LISTA DE GANADORES";
             this.button1.UseVisualStyleBackColor = false;
             // 
             // btn_AgregarPasajero
             // 
             this.btn_AgregarPasajero.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.btn_AgregarPasajero.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btn_AgregarPasajero.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btn_AgregarPasajero.ForeColor = System.Drawing.Color.White;
             this.btn_AgregarPasajero.Location = new System.Drawing.Point(16, 259);
             this.btn_AgregarPasajero.Name = "btn_AgregarPasajero";
             this.btn_AgregarPasajero.Size = new System.Drawing.Size(174, 44);
             this.btn_AgregarPasajero.TabIndex = 16;
-            this.btn_AgregarPasajero.Text = "Agregar pasajero";
+            this.btn_AgregarPasajero.Text = "AGREGAR PASAJERO";
             this.btn_AgregarPasajero.UseVisualStyleBackColor = false;
             this.btn_AgregarPasajero.Click += new System.EventHandler(this.btn_AgregarPasajero_Click);
             // 
@@ -84,13 +84,13 @@
             // btn_RealizarSorteo
             // 
             this.btn_RealizarSorteo.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.btn_RealizarSorteo.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btn_RealizarSorteo.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btn_RealizarSorteo.ForeColor = System.Drawing.Color.White;
             this.btn_RealizarSorteo.Location = new System.Drawing.Point(12, 191);
             this.btn_RealizarSorteo.Name = "btn_RealizarSorteo";
             this.btn_RealizarSorteo.Size = new System.Drawing.Size(178, 49);
             this.btn_RealizarSorteo.TabIndex = 14;
-            this.btn_RealizarSorteo.Text = "Realizar sorteo";
+            this.btn_RealizarSorteo.Text = "REALIZAR SORTEO";
             this.btn_RealizarSorteo.UseVisualStyleBackColor = false;
             this.btn_RealizarSorteo.Click += new System.EventHandler(this.btn_RealizarSorteo_Click_1);
             // 
@@ -158,7 +158,7 @@
             // 
             // btn_Salir
             // 
-            this.btn_Salir.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btn_Salir.BackColor = System.Drawing.Color.PaleTurquoise;
             this.btn_Salir.ForeColor = System.Drawing.Color.White;
             this.btn_Salir.Location = new System.Drawing.Point(750, 407);
             this.btn_Salir.Name = "btn_Salir";
