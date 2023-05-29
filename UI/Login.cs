@@ -68,16 +68,16 @@ namespace UI
             this.Close();
         }
 
-        private void btn_AutocompletarVendedor_Click(object sender, EventArgs e)
-        {
-            txt_Usuario.Text = "sharris@maiden.com.uk";
-            txt_Clave.Text = "eddie666";
-        }
-
         private void btn_AutocompletarSupervisor_Click(object sender, EventArgs e)
         {
             txt_Usuario.Text = "trobinson@super.com";
             txt_Clave.Text = "12345678";
+        }
+
+        private void btn_AutocompletarVendedor_Click_1(object sender, EventArgs e)
+        {
+            txt_Usuario.Text = "sharris@maiden.com.uk";
+            txt_Clave.Text = "eddie666";
         }
     }
 }

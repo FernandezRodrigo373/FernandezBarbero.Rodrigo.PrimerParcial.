@@ -152,6 +152,7 @@
             this.btn_AutocompletarVendedor.TabIndex = 19;
             this.btn_AutocompletarVendedor.Text = " VENDEDOR";
             this.btn_AutocompletarVendedor.UseVisualStyleBackColor = false;
+            this.btn_AutocompletarVendedor.Click += new System.EventHandler(this.btn_AutocompletarVendedor_Click_1);
             this.btn_AutocompletarVendedor.Resize += new System.EventHandler(this.btn_Ingresar_Click_1);
             // 
             // btn_AutocompletarSupervisor

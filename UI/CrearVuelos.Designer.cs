@@ -92,6 +92,8 @@
             // 
             // txb_Piloto
             // 
+            this.txb_Piloto.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txb_Piloto.Location = new System.Drawing.Point(154, 206);
             this.txb_Piloto.Name = "txb_Piloto";
             this.txb_Piloto.PlaceholderText = "Piloto";
