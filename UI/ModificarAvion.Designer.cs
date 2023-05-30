@@ -46,6 +46,8 @@
             this.txb_ModificaAsientos = new System.Windows.Forms.TextBox();
             this.txb_ModificaMatricula = new System.Windows.Forms.TextBox();
             this.btn_ConfrimarModifica = new System.Windows.Forms.Button();
+            this.lbl_Error = new System.Windows.Forms.Label();
+            this.btn_VerLista = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtg_Datos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -224,6 +226,26 @@
             this.btn_ConfrimarModifica.UseVisualStyleBackColor = false;
             this.btn_ConfrimarModifica.Click += new System.EventHandler(this.btn_ConfrimarModifica_Click);
             // 
+            // lbl_Error
+            // 
+            this.lbl_Error.AutoSize = true;
+            this.lbl_Error.Location = new System.Drawing.Point(12, 370);
+            this.lbl_Error.Name = "lbl_Error";
+            this.lbl_Error.Size = new System.Drawing.Size(10, 15);
+            this.lbl_Error.TabIndex = 19;
+            this.lbl_Error.Text = ".";
+            // 
+            // btn_VerLista
+            // 
+            this.btn_VerLista.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.btn_VerLista.Location = new System.Drawing.Point(30, 323);
+            this.btn_VerLista.Name = "btn_VerLista";
+            this.btn_VerLista.Size = new System.Drawing.Size(120, 23);
+            this.btn_VerLista.TabIndex = 20;
+            this.btn_VerLista.Text = "Ver lista";
+            this.btn_VerLista.UseVisualStyleBackColor = false;
+            this.btn_VerLista.Click += new System.EventHandler(this.btn_VerLista_Click);
+            // 
             // ModificarAvion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -231,6 +253,8 @@
             this.BackColor = System.Drawing.Color.SeaShell;
             this.ClientSize = new System.Drawing.Size(483, 416);
             this.ControlBox = false;
+            this.Controls.Add(this.btn_VerLista);
+            this.Controls.Add(this.lbl_Error);
             this.Controls.Add(this.btn_ConfrimarModifica);
             this.Controls.Add(this.txb_ModificaBodega);
             this.Controls.Add(this.txb_ModificaBanios);
@@ -279,5 +303,7 @@
         private System.Windows.Forms.TextBox txb_ModificaAsientos;
         private System.Windows.Forms.TextBox txb_ModificaMatricula;
         private System.Windows.Forms.Button btn_ConfrimarModifica;
+        private System.Windows.Forms.Label lbl_Error;
+        private System.Windows.Forms.Button btn_VerLista;
     }
 }

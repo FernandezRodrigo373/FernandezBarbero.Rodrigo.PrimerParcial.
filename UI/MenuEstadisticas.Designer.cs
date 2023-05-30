@@ -61,6 +61,7 @@
             this.btn_HorasDeVuelo.TabIndex = 13;
             this.btn_HorasDeVuelo.Text = "Horas de Vuelo";
             this.btn_HorasDeVuelo.UseVisualStyleBackColor = false;
+            this.btn_HorasDeVuelo.Click += new System.EventHandler(this.btn_HorasDeVuelo_Click);
             // 
             // btn_Ganancias
             // 
@@ -73,6 +74,7 @@
             this.btn_Ganancias.TabIndex = 12;
             this.btn_Ganancias.Text = "Ganancias";
             this.btn_Ganancias.UseVisualStyleBackColor = false;
+            this.btn_Ganancias.Click += new System.EventHandler(this.btn_Ganancias_Click);
             // 
             // btn_ListaDeDestinos
             // 
@@ -85,6 +87,7 @@
             this.btn_ListaDeDestinos.TabIndex = 11;
             this.btn_ListaDeDestinos.Text = "Destino mas elegido";
             this.btn_ListaDeDestinos.UseVisualStyleBackColor = false;
+            this.btn_ListaDeDestinos.Click += new System.EventHandler(this.btn_ListaDeDestinos_Click);
             // 
             // btn_ListaDeDestinosPorFacturacion
             // 
@@ -98,6 +101,7 @@
             this.btn_ListaDeDestinosPorFacturacion.TabIndex = 18;
             this.btn_ListaDeDestinosPorFacturacion.Text = "Lista de destinos por facturacion";
             this.btn_ListaDeDestinosPorFacturacion.UseVisualStyleBackColor = false;
+            this.btn_ListaDeDestinosPorFacturacion.Click += new System.EventHandler(this.btn_ListaDeDestinosPorFacturacion_Click);
             // 
             // btn_OrdenarDeManeraDescendente
             // 
@@ -109,6 +113,7 @@
             this.btn_OrdenarDeManeraDescendente.TabIndex = 17;
             this.btn_OrdenarDeManeraDescendente.Text = "Descendente";
             this.btn_OrdenarDeManeraDescendente.UseVisualStyleBackColor = false;
+            this.btn_OrdenarDeManeraDescendente.Click += new System.EventHandler(this.btn_OrdenarDeManeraDescendente_Click);
             // 
             // btn_OrdenarDeManeraAscendente
             // 
@@ -120,6 +125,7 @@
             this.btn_OrdenarDeManeraAscendente.TabIndex = 16;
             this.btn_OrdenarDeManeraAscendente.Text = "Ascendente";
             this.btn_OrdenarDeManeraAscendente.UseVisualStyleBackColor = false;
+            this.btn_OrdenarDeManeraAscendente.Click += new System.EventHandler(this.btn_OrdenarDeManeraAscendente_Click);
             // 
             // btn_PasajerosPorCantDeVuelos
             // 
@@ -132,6 +138,7 @@
             this.btn_PasajerosPorCantDeVuelos.TabIndex = 15;
             this.btn_PasajerosPorCantDeVuelos.Text = "Pasajeros ordenados por cantidad de vuelos";
             this.btn_PasajerosPorCantDeVuelos.UseVisualStyleBackColor = false;
+            this.btn_PasajerosPorCantDeVuelos.Click += new System.EventHandler(this.btn_PasajerosPorCantDeVuelos_Click);
             // 
             // gb_Ayuda
             // 
@@ -163,6 +170,7 @@
             this.btn_Finalizar.TabIndex = 20;
             this.btn_Finalizar.Text = "Finalizar operaciones";
             this.btn_Finalizar.UseVisualStyleBackColor = false;
+            this.btn_Finalizar.Click += new System.EventHandler(this.btn_Finalizar_Click);
             // 
             // dtg_Datos
             // 
@@ -185,6 +193,7 @@
             this.btn_Ayuda.TabIndex = 23;
             this.btn_Ayuda.Text = "Ayuda";
             this.btn_Ayuda.UseVisualStyleBackColor = true;
+            this.btn_Ayuda.Click += new System.EventHandler(this.btn_Ayuda_Click);
             // 
             // btn_Salir
             // 
@@ -197,6 +206,7 @@
             this.btn_Salir.TabIndex = 22;
             this.btn_Salir.Text = "SALIR";
             this.btn_Salir.UseVisualStyleBackColor = false;
+            this.btn_Salir.Click += new System.EventHandler(this.btn_Salir_Click);
             // 
             // Resultados
             // 
@@ -269,6 +279,7 @@
             this.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.Name = "MenuEstadisticas";
             this.Text = "MenuEstadisticas";
+            this.Load += new System.EventHandler(this.MenuEstadisticas_Load);
             this.gb_Ayuda.ResumeLayout(false);
             this.gb_Ayuda.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtg_Datos)).EndInit();

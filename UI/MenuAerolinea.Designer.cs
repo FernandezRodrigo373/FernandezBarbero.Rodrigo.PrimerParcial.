@@ -405,6 +405,7 @@
             this.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.Name = "MenuAerolinea";
             this.Text = "MenuAerolinea";
+            this.Load += new System.EventHandler(this.MenuAerolinea_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtg_Datos)).EndInit();

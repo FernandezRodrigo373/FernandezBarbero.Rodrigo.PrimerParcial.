@@ -180,7 +180,7 @@ namespace Entidades
         {
             List<Cliente> auxCliente = new List<Cliente>();
 
-            if (Validadora.ValidarNumeroConRango(dni.ToString(), 10000, 3000000))
+            if (Validadora.ValidarNumeroConRango(dni.ToString(), 10000, 300000000))
             {
                 foreach (Cliente item in listaDeClientes)
                 {

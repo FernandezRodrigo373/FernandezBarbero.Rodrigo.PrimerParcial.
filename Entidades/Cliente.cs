@@ -29,11 +29,8 @@ namespace Entidades
         }
         public int Edad 
         {
-            get
-            { 
-                return edad;
-            }
-            set { Edad = value; }
+            get { return edad; }
+            set { edad = value; }
         }
 
 

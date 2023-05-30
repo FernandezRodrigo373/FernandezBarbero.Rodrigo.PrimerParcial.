@@ -33,9 +33,11 @@ namespace UI
                 btn_RealizarSorteo.Visible = false;
             }
 
-            if(empleado.legajo < 0 && empleado.legajo > 3)
+            if(empleado.legajo > 0 && empleado.legajo < 4)
             {
-                btn_CrearVuelos.Visible = false;
+                btn_CrearVuelos.Enabled = false;
+                modificarAvionesToolStripMenuItem.Visible = false;
+
             }
 
             if (empleado.legajo == 4)
@@ -62,22 +64,7 @@ namespace UI
             empleado1 = empleado;
 
         }
-        private void MenuAerolinea_Load(object sender, EventArgs e)
-        {
-            txb_ClienteABuscar.Visible = false;
-            btn_BuscarCliente.Visible = false;
 
-            txb_VueloABuscar.Visible = false;
-            btn_BuscarVuelosPorId.Visible = false;
-
-            dtg_Datos.Visible = false;
-            dtg_Dato2.Visible = false;
-
-            gb_MuestraDatos.Visible = false;
-            lbl_Ayuda.Visible = false;
-
-            gb_MuestraDatos.Visible = false;
-        }
 
 
 
@@ -105,6 +92,7 @@ namespace UI
                 lbl_Ayuda.Text = null;
                 lbl_Ayuda.Text = "Error";
             }
+
         }
 
 
@@ -304,6 +292,23 @@ namespace UI
         private void button1_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void MenuAerolinea_Load(object sender, EventArgs e)
+        {
+            txb_ClienteABuscar.Visible = false;
+            btn_BuscarCliente.Visible = false;
+
+            txb_VueloABuscar.Visible = false;
+            btn_BuscarVuelosPorId.Visible = false;
+
+            dtg_Datos.Visible = false;
+            dtg_Dato2.Visible = false;
+
+            gb_MuestraDatos.Visible = false;
+            lbl_Ayuda.Visible = false;
+
+            gb_MuestraDatos.Visible = false;
         }
     }
 }

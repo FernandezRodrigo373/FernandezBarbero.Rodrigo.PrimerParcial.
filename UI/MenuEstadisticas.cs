@@ -20,9 +20,9 @@ namespace UI
         {
             InitializeComponent();
         }
+//
         private void MenuEstadisticas_Load(object sender, EventArgs e)
         {
-
             dtg_Datos.AutoResizeColumns();
             dtg_Datos.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
 
@@ -38,9 +38,7 @@ namespace UI
             btn_OrdenarDeManeraDescendente.Visible = false;
 
             gb_Ayuda.Visible = false;
-
         }
-
 
         private void btn_ListaDeDestinos_Click(object sender, EventArgs e)
         {
