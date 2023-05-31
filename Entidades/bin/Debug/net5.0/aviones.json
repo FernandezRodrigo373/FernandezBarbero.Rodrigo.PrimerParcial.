@@ -1,0 +1,51 @@
+[
+  {
+    "Matricula": "rojo789d",
+    "CantidadDeAsientos": 100,
+    "CantidadDeBa�os": 2,
+    "CapacidadBodega": 2000,
+    "HorasDeVuelo": 0
+  },
+  {
+    "Matricula": "azul123f",
+    "CantidadDeAsientos": 125,
+    "CantidadDeBa�os": 4,
+    "CapacidadBodega": 3000,
+    "HorasDeVuelo": 0
+  },
+  {
+    "Matricula": "blan456j",
+    "CantidadDeAsientos": 101,
+    "CantidadDeBa�os": 3,
+    "CapacidadBodega": 3000,
+    "HorasDeVuelo": 0
+  },
+  {
+    "Matricula": "marr258u",
+    "CantidadDeAsientos": 175,
+    "CantidadDeBa�os": 5,
+    "CapacidadBodega": 2500,
+    "HorasDeVuelo": 0
+  },
+  {
+    "Matricula": "gris874a",
+    "CantidadDeAsientos": 80,
+    "CantidadDeBa�os": 2,
+    "CapacidadBodega": 2500,
+    "HorasDeVuelo": 0
+  },
+  {
+    "Matricula": "rosa147c",
+    "CantidadDeAsientos": 90,
+    "CantidadDeBa�os": 3,
+    "CapacidadBodega": 2000,
+    "HorasDeVuelo": 0
+  },
+  {
+    "Matricula": "cele159p",
+    "CantidadDeAsientos": 75,
+    "CantidadDeBa�os": 2,
+    "CapacidadBodega": 1000,
+    "HorasDeVuelo": 0
+  }
+]

@@ -323,7 +323,7 @@
             this.lbl_Fecha.AutoSize = true;
             this.lbl_Fecha.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lbl_Fecha.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lbl_Fecha.Location = new System.Drawing.Point(912, 77);
+            this.lbl_Fecha.Location = new System.Drawing.Point(912, 93);
             this.lbl_Fecha.Name = "lbl_Fecha";
             this.lbl_Fecha.Size = new System.Drawing.Size(12, 19);
             this.lbl_Fecha.TabIndex = 25;

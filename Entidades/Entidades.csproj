@@ -9,6 +9,15 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="aviones.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Clientes.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Clientes.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="MOCK_DATA.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

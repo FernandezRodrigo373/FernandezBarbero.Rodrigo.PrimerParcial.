@@ -8,6 +8,11 @@ namespace Entidades
         protected string apellido;
         protected int edad;
 
+        protected Persona()
+        {
+
+        }
+
         protected Persona(string nombre, string apellido, int edad)
         {
             this.nombre = nombre;

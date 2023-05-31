@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace Entidades
 {
@@ -10,6 +11,13 @@ namespace Entidades
     {
         private int dni;
         private int cantidadDeVuelos;
+
+
+
+        public Cliente()
+        {
+
+        }
 
 
         public Cliente(string nombre, string apellido, int edad, int dni, int cantidadDeVuelos) : base(nombre, apellido, edad)
