@@ -37,39 +37,17 @@ namespace Entidades
 
         static AerolineaSistema()
         {
-            string jsonString = "MOCK_DATA.json";
 
-            string aux = File.ReadAllText(jsonString);
-
-            listaEmpleados = JsonConvert.DeserializeObject<List<Empleado>>(aux);
-
+            listaEmpleados = Serializadora.DeserializarEmpleados();
             listaDeAviones = Serializadora.DeserializarAviones();
 
-          //  listaDeAviones = new List<Avion>();
-            /*listaDeAviones.Add(new Avion("rojo789d", 100, 2, 2000, 0));
-            listaDeAviones.Add(new Avion("azul123f", 125, 4, 3000, 0));
-            listaDeAviones.Add(new Avion("blan456j", 101, 3, 3000, 0));
-            listaDeAviones.Add(new Avion("marr258u", 175, 5, 2500, 0));
-            listaDeAviones.Add(new Avion("cele159p", 75, 2, 1000, 0));
-            listaDeAviones.Add(new Avion("gris874a", 80, 2,1500, 0));
-            listaDeAviones.Add(new Avion("rosa147c", 90, 3, 2000, 0));*/
-           // listaDeAviones = Serializadora.DeserializarAviones();
-
-            /*listaDeClientes = new List<Cliente>();
-
-            listaDeClientes.Add(new Cliente("Marcos", "Villafañe", 25, 39875854, 5));
-            listaDeClientes.Add(new Cliente("Lautaro", "Farias", 19, 44152654, 2));
-            listaDeClientes.Add(new Cliente("Gael", "Roldan", 20, 43546852, 1));
-            listaDeClientes.Add(new Cliente("Roman", "Iarussi", 78, 8145125, 0));
-            listaDeClientes.Add(new Cliente("Cristiano", "Ronaldo", 38, 32152456, 6));
-            listaDeClientes.Add(new Cliente("Tobiaas", "Iaru", 50, 20587456, 0));
-            listaDeClientes.Add(new Cliente("Carolina", "Vodanovich", 43, 23458751, 7));
-            listaDeClientes.Add(new Cliente("Pepe", "Veraz", 47, 24123456, 3));
-            listaDeClientes.Add(new Cliente("Luka", "Doncic", 14, 48542654, 2));
-            listaDeClientes.Add(new Cliente("German", "Fernandez", 12, 49145789, 4));
-            listaDeClientes.Add(new Cliente("Nestor", "Gonzalez", 53, 40054736, 0));*/
-
             listaDeClientes = Serializadora.DeserializarClientes();
+
+
+
+            // No puedo generar la deserializacion para vuelos debido a que no tengo los conocimientos para realizarla,
+            // no se como se podria agregar los datos de otras clases dentro de un archivo xml
+            // espero lo tengan en consideracion muchas gracias
 
             listaDeVuelos = new List<Vuelo>();
             mensaje1 = EstadoVuelo(listaDeAviones[0].CantidadDeAsientos, CargarPasajeros1().Count);

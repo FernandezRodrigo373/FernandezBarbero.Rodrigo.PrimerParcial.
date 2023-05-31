@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -33,6 +34,20 @@ namespace Entidades
             return listaAviones;
         }
 
+         public static List<Empleado> DeserializarEmpleados()
+         {
+            List <Empleado> listaEmpleados;
+            string jsonString = "MOCK_DATA.json";
+
+            string aux = File.ReadAllText(jsonString);
+
+            listaEmpleados = JsonConvert.DeserializeObject<List<Empleado>>(aux);
+
+            return listaEmpleados;
+         }  
+
+
+
         public static List<Cliente> DeserializarClientes()
         {
             XmlRootAttribute xRoot = new XmlRootAttribute();
@@ -48,6 +63,16 @@ namespace Entidades
                 return lista;
             }
 
+        }
+
+        public static void GuardarClientes(List<Cliente> listaClientes)
+        {
+            XmlSerializer xmlSerializer = new XmlSerializer(typeof(List<Cliente>));
+
+            using (StreamWriter writer = new StreamWriter("clientes.xml"))
+            {
+                xmlSerializer.Serialize(writer, listaClientes);
+            }
         }
 
     }
