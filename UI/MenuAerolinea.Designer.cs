@@ -40,6 +40,7 @@
             this.modificarAvionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.vueloToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.buscarVueloToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.modificarVueloToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btn_CrearVuelos = new System.Windows.Forms.Button();
             this.btn_VenderVuelos = new System.Windows.Forms.Button();
             this.btn_ListaDeVuelos = new System.Windows.Forms.Button();
@@ -154,7 +155,8 @@
             // vueloToolStripMenuItem
             // 
             this.vueloToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.buscarVueloToolStripMenuItem});
+            this.buscarVueloToolStripMenuItem,
+            this.modificarVueloToolStripMenuItem});
             this.vueloToolStripMenuItem.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.vueloToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.vueloToolStripMenuItem.Name = "vueloToolStripMenuItem";
@@ -164,9 +166,16 @@
             // buscarVueloToolStripMenuItem
             // 
             this.buscarVueloToolStripMenuItem.Name = "buscarVueloToolStripMenuItem";
-            this.buscarVueloToolStripMenuItem.Size = new System.Drawing.Size(148, 24);
+            this.buscarVueloToolStripMenuItem.Size = new System.Drawing.Size(159, 24);
             this.buscarVueloToolStripMenuItem.Text = "Buscar Vuelo";
             this.buscarVueloToolStripMenuItem.Click += new System.EventHandler(this.buscarVueloToolStripMenuItem_Click);
+            // 
+            // modificarVueloToolStripMenuItem
+            // 
+            this.modificarVueloToolStripMenuItem.Name = "modificarVueloToolStripMenuItem";
+            this.modificarVueloToolStripMenuItem.Size = new System.Drawing.Size(159, 24);
+            this.modificarVueloToolStripMenuItem.Text = "Modificar Vuelo";
+            this.modificarVueloToolStripMenuItem.Click += new System.EventHandler(this.modificarVueloToolStripMenuItem_Click);
             // 
             // btn_CrearVuelos
             // 
@@ -292,7 +301,7 @@
             this.lbl_OperadorTexto.AutoSize = true;
             this.lbl_OperadorTexto.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lbl_OperadorTexto.ForeColor = System.Drawing.Color.White;
-            this.lbl_OperadorTexto.Location = new System.Drawing.Point(834, 63);
+            this.lbl_OperadorTexto.Location = new System.Drawing.Point(912, 63);
             this.lbl_OperadorTexto.Name = "lbl_OperadorTexto";
             this.lbl_OperadorTexto.Size = new System.Drawing.Size(195, 21);
             this.lbl_OperadorTexto.TabIndex = 27;
@@ -303,7 +312,7 @@
             this.lbl_Operador.AutoSize = true;
             this.lbl_Operador.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lbl_Operador.ForeColor = System.Drawing.Color.White;
-            this.lbl_Operador.Location = new System.Drawing.Point(1052, 63);
+            this.lbl_Operador.Location = new System.Drawing.Point(1126, 63);
             this.lbl_Operador.Name = "lbl_Operador";
             this.lbl_Operador.Size = new System.Drawing.Size(13, 21);
             this.lbl_Operador.TabIndex = 26;
@@ -314,7 +323,7 @@
             this.lbl_Fecha.AutoSize = true;
             this.lbl_Fecha.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lbl_Fecha.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lbl_Fecha.Location = new System.Drawing.Point(834, 84);
+            this.lbl_Fecha.Location = new System.Drawing.Point(912, 77);
             this.lbl_Fecha.Name = "lbl_Fecha";
             this.lbl_Fecha.Size = new System.Drawing.Size(12, 19);
             this.lbl_Fecha.TabIndex = 25;
@@ -449,5 +458,6 @@
         private System.Windows.Forms.ToolStripMenuItem modificarClienteToolStripMenuItem;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.ToolStripMenuItem modificarAvionesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem modificarVueloToolStripMenuItem;
     }
 }

@@ -25,6 +25,9 @@
     <Compile Update="ModificarCliente.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="ModificarViaje.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="SorteoCliente.cs">
       <SubType>Form</SubType>
     </Compile>

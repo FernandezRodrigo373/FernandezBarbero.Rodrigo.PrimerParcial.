@@ -66,14 +66,19 @@ namespace Entidades
         public eOrigen Origen
         { 
             get { return origen; }
+            set { origen = value; }
         }
         public eDestinos Destino
         {
             get { return destino; }
+            set { destino = value; }
         } 
 
         public DateTime FechaYHoraDePartida
-        { get { return horaDePartida; } }
+        { 
+            get { return horaDePartida; } 
+            set { horaDePartida = value; }
+        }
         public int DuracionVuelo
         {
             get { return duracionVuelo; }
@@ -82,11 +87,16 @@ namespace Entidades
         public string NombrePiloto
         {
             get { return nombrePiloto; }
+            set
+            {
+                nombrePiloto = value;
+            }
         }
 
        public string MatriculaDeAvionAsignado
        {
             get { return matriculaDeAvionAsignado; }
+            set { matriculaDeAvionAsignado = value; }
        }
 
         public int CantidadDeAsientosDisponibles

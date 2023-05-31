@@ -29,11 +29,6 @@ namespace UI
         }
 
 
-
-
-
-
-
         private void btn_Agregar_Click(object sender, EventArgs e)
         {
             List<Pasajero> lista = new List<Pasajero>();

@@ -67,7 +67,6 @@ namespace UI
             label2.Visible = true;
             label3.Visible = true;
             txb_Apellido.Visible = true;
-            //txb_Dni.Visible = true;
             txb_Edad.Visible = true;
             txb_Nombre.Visible = true;
 

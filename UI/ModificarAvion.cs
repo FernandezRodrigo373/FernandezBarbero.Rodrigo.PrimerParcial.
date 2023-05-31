@@ -22,8 +22,7 @@ namespace UI
 
         private void btn_Confirmar_Click(object sender, EventArgs e)
         {
-            if (cantAviones < 7 && cantAviones > 0)
-            {
+   
 
                 if (txb_Matricula is not null && Validadora.ValidarNumeroConRango(txb_CantBanios.Text, 1, 6) && Validadora.ValidarNumeroConRango(txb_CantidadDeAsientos.Text, 50, 300) && txb_CantidadDeAsientos is not null && Validadora.ValidarNumeroConRango(txb_CapacidadBodega.Text, 200, 1000))
                 {
@@ -31,20 +30,21 @@ namespace UI
 
                     for (int i = 0; i < AerolineaSistema.listaDeAviones.Count; i++)
                     {
-                        if (avionNuevo.Matricula != AerolineaSistema.listaDeAviones[i].Matricula)
+                        if (avionNuevo.Matricula != AerolineaSistema.listaDeAviones[i].Matricula && cantAviones < 8)
                         {
                             AerolineaSistema.listaDeAviones.Add(avionNuevo);
 
                             dtg_Datos.DataSource = AerolineaSistema.listaDeAviones;
                             cantAviones++;
+                            
                         }
                         else
                         {
-                            lbl_CantidadDeAviones.Text = "El avion ya existe";
+                            lbl_CantidadDeAviones.Text = "ERROR";
 
                             dtg_Datos.Visible = true;
 
-                            lbl_CantidadDeAviones.Text = Avion.AvionYaExiste(avionNuevo, " ya existe ").ToString();
+                            //lbl_CantidadDeAviones.Text = Avion.AvionYaExiste(avionNuevo, " ya existe ").ToString();
                         }
                     }
 
@@ -55,11 +55,7 @@ namespace UI
 
                     lbl_CantidadDeAviones.Text = "Error";
                 }
-            }
-            else
-            {
-                lbl_CantidadDeAviones.Text = "Cantidad de aviones no puede superar los 7. Primero elimine uno";
-            }
+
         }
 
         private void btn_Salir_Click(object sender, EventArgs e)
@@ -160,8 +156,7 @@ namespace UI
         private void btn_ConfrimarModifica_Click(object sender, EventArgs e)
         {
 
-            if (cantAviones < 7 && cantAviones > 0)
-            {
+           
 
                 if (!String.IsNullOrEmpty(txb_AvionID.Text))
                 {
@@ -188,11 +183,7 @@ namespace UI
                 }
 
 
-            }
-            else
-            {
-                lbl_Error.Text = "No se pueden añadir mas aviones";
-            }
+        
         }
 
         private void btn_CrearAvion_Click(object sender, EventArgs e)

@@ -27,6 +27,8 @@ namespace UI
                 btn_ListaDeVuelos.Visible = false;
                 btn_VenderVuelos.Visible = false;
                 clientesToolStripMenuItem.Enabled = false;
+                modificarVueloToolStripMenuItem.Visible = false;
+
             }
             else
             {
@@ -37,14 +39,17 @@ namespace UI
             {
                 btn_CrearVuelos.Enabled = false;
                 modificarAvionesToolStripMenuItem.Visible = false;
+                modificarVueloToolStripMenuItem.Visible = false;
+
 
             }
 
-            if (empleado.legajo == 4)
+            if (empleado.legajo == 5)
             {
                 btn_ListaDeVuelos.Visible = false;
                 btn_VenderVuelos.Visible = false;
                 btn_CrearVuelos.Visible = false;
+                modificarVueloToolStripMenuItem.Visible = true;
 
             }
 
@@ -309,6 +314,16 @@ namespace UI
             lbl_Ayuda.Visible = false;
 
             gb_MuestraDatos.Visible = false;
+        }
+
+        private void modificarVueloToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ModificarViaje menuModificarViaje = new ModificarViaje();
+
+            if (menuModificarViaje.ShowDialog() == DialogResult.OK)
+            {
+                dtg_Datos.Refresh();
+            }
         }
     }
 }
